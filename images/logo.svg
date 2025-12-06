@@ -1,0 +1,12 @@
+<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mountain/Frontier symbol -->
+  <path d="M15 45L25 25L35 40L45 20L55 35L65 45H15Z" fill="#FF4500"/>
+  <path d="M20 45L25 35L30 42L35 30L40 37L45 45H20Z" fill="#2D3748"/>
+  
+  <!-- Text -->
+  <text x="75" y="28" font-family="'Archivo', sans-serif" font-weight="900" font-size="20" fill="#2D3748">FRONTIER</text>
+  <text x="75" y="45" font-family="'Archivo', sans-serif" font-weight="600" font-size="12" fill="#718096" letter-spacing="2">SITE OPERATIONS</text>
+  
+  <!-- Accent line -->
+  <rect x="75" y="32" width="150" height="2" fill="#FF4500"/>
+</svg>

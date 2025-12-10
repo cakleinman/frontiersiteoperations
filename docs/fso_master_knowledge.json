@@ -1,0 +1,714 @@
+{
+  "_metadata": {
+    "version": "1.1.0",
+    "created": "2025-12-09",
+    "last_updated": "2025-12-10",
+    "purpose": "Single source of truth for all FSO AI agents",
+    "usage": "All agents MUST reference this file before generating content. Never fabricate information not contained here.",
+    "changelog": [
+      {"version": "1.0.0", "date": "2025-12-09", "changes": "Initial creation"},
+      {"version": "1.1.0", "date": "2025-12-10", "changes": "Added brand color system (three-paint fleet colors, usage rules)"}
+    ]
+  },
+
+  "company": {
+    "legal_name": "Frontier Site Operations LLC",
+    "dba": ["Frontier Site Operations", "FSO"],
+    "entity_type": "Limited Liability Company",
+    "state_of_incorporation": "Utah",
+    "date_registered": "2025-12-03",
+    "status": "Active",
+    "owner": {
+      "name": "Christopher Kleinman",
+      "role": "Owner/Operator",
+      "ownership_percentage": 100,
+      "veteran_status": true,
+      "military_service": {
+        "branch": "Utah Army National Guard",
+        "status": "Active Member",
+        "service_dates": null
+      }
+    },
+    "contact": {
+      "phone": {
+        "temporary": "805-434-7063",
+        "business": null,
+        "notes": "Using personal number temporarily - business line to be set up"
+      },
+      "email": null,
+      "website": null,
+      "address": {
+        "street": null,
+        "city": "Provo",
+        "state": "Utah",
+        "zip": null
+      }
+    },
+    "service_area": {
+      "primary": "Utah County",
+      "secondary": "Salt Lake County",
+      "core_corridor": "I-15 from Provo to Sandy",
+      "flexibility": "Willing to take good jobs outside primary area",
+      "notes": "Owner lives in Provo, works in Sandy - I-15 corridor is easy to service"
+    }
+  },
+
+  "certifications_and_registrations": {
+    "vosb": {
+      "status": "in_progress",
+      "certified": false,
+      "certification_date": null,
+      "expiration_date": null,
+      "notes": "Actively working on VOSB certification - strategic priority"
+    },
+    "sam": {
+      "status": "in_progress",
+      "registered": false,
+      "uei": null,
+      "cage_code": null,
+      "registration_date": null,
+      "expiration_date": null,
+      "notes": "Actively working on SAM registration - required for federal contracts"
+    },
+    "sasp": {
+      "status": "in_progress",
+      "enrolled": false,
+      "state_agency": "Utah State Agency for Surplus Property",
+      "enrollment_date": null,
+      "notes": "Actively working on enrollment - critical for low-cost equipment acquisition"
+    },
+    "other_certifications": [],
+    "naics_codes": {
+      "status": "planned",
+      "confirmed": [],
+      "planned": [
+        {"code": "484110", "description": "General Freight Trucking, Local"},
+        {"code": "484220", "description": "Specialized Freight (except Used Goods) Trucking, Long-Distance"},
+        {"code": "562111", "description": "Solid Waste Collection"},
+        {"code": "532120", "description": "Truck, Utility Trailer, and RV Rental and Leasing"},
+        {"code": "423830", "description": "Industrial Machinery and Equipment Merchant Wholesalers"}
+      ],
+      "notes": "NAICS codes not yet registered - these are planned codes for future SAM registration"
+    }
+  },
+
+  "services": {
+    "overview": "Contractor-support logistics company specializing in hauling, jobsite services, materials movement, and remote-access support. Intentionally structured to operate in both commercial and government environments.",
+    "core_services": [
+      {
+        "id": "equipment_transport",
+        "name": "Equipment Transport",
+        "description": "Pick up and deliver rental equipment, move customer-owned equipment between yards and jobsites, handle urgent same-day and remote-access hauls",
+        "examples": [
+          "Lifts",
+          "Skid steers",
+          "Generators",
+          "Compressors",
+          "Light towers"
+        ],
+        "differentiators": [
+          "Same-day delivery available",
+          "Remote access capability",
+          "Urgent response"
+        ],
+        "active": true
+      },
+      {
+        "id": "jobsite_services",
+        "name": "Jobsite Services",
+        "description": "Deliver, position, maintain, and retrieve owned equipment such as light towers, generators, fuel cubes, and portable site gear. Perform small on-site logistical tasks.",
+        "examples": [
+          "Light tower deployment",
+          "Generator placement",
+          "Fuel cube delivery",
+          "Equipment swaps",
+          "Repositioning",
+          "Moving light loads around site"
+        ],
+        "differentiators": [
+          "Full service (deliver, position, maintain, retrieve)",
+          "On-site support tasks"
+        ],
+        "active": true
+      },
+      {
+        "id": "materials_delivery",
+        "name": "Materials Delivery",
+        "description": "Pick up and deliver building materials from suppliers. Provide contractor overflow hauling when they lack time, trucks, or staff.",
+        "examples": [
+          "Lumber",
+          "Forms",
+          "Hardware",
+          "Palletized goods"
+        ],
+        "differentiators": [
+          "Overflow capacity for busy contractors",
+          "Supplier pickup and delivery"
+        ],
+        "active": true
+      },
+      {
+        "id": "waste_container_services",
+        "name": "Waste & Container Services",
+        "description": "Deliver and retrieve dumpsters or debris boxes. Transport debris to approved disposal sites.",
+        "examples": [
+          "Dumpster delivery",
+          "Debris box retrieval",
+          "Debris transport to disposal"
+        ],
+        "differentiators": [
+          "Approved disposal site transport"
+        ],
+        "active": true
+      }
+    ],
+    "future_services": []
+  },
+
+  "equipment": {
+    "current_fleet": {
+      "vehicles": [],
+      "trailers": [],
+      "equipment": [],
+      "notes": "Fleet is being built. Owner currently drives a Prius C; has an unreliable Chevy S-10 that a brother is using full-time. Neither suitable for hauling operations."
+    },
+    "planned_acquisitions": {
+      "phase_1_priority": {
+        "description": "Initial fleet build - standard hauling capability",
+        "vehicles": [
+          {
+            "type": "F-350 Dually",
+            "purpose": "Primary hauling truck",
+            "priority": "high",
+            "source": "SASP or commercial purchase"
+          }
+        ],
+        "trailers": [
+          {
+            "type": "Gooseneck trailer",
+            "purpose": "Equipment hauling",
+            "priority": "high"
+          },
+          {
+            "type": "Dump trailer",
+            "purpose": "Waste hauling and materials",
+            "priority": "high"
+          },
+          {
+            "type": "Slide-off gooseneck trailer",
+            "purpose": "Slide-off dumpster capability",
+            "priority": "medium",
+            "notes": "Depends on availability - would enable dumpster services"
+          }
+        ]
+      },
+      "phase_2_expansion": {
+        "description": "Remote access and off-road capability",
+        "vehicles": [
+          {
+            "type": "LMTV (Light Medium Tactical Vehicle)",
+            "purpose": "Off-road and remote access hauling",
+            "source": "SASP military surplus"
+          },
+          {
+            "type": "HMMWV or similar",
+            "purpose": "Remote site access",
+            "source": "SASP military surplus"
+          }
+        ],
+        "trailers": [
+          {
+            "type": "Off-road trailers",
+            "purpose": "Remote site equipment transport",
+            "notes": "Special trailers rated for off-road use"
+          }
+        ],
+        "notes": "Phase 2 enables remote access services - not available until these acquisitions complete"
+      },
+      "sources": [
+        "SASP (State Agency for Surplus Property)",
+        "GSA Auctions",
+        "DLA Disposition Services",
+        "FEMA surplus programs",
+        "Local/Municipal Surplus",
+        "Commercial purchase if needed"
+      ]
+    },
+    "acquisition_strategy": {
+      "primary_method": "SASP and government surplus programs",
+      "rationale": "Dramatically reduces acquisition costs and builds competitive fleet while keeping capital expenditures low",
+      "programs": [
+        {
+          "name": "GSA Federal Surplus Property Program",
+          "description": "Federal surplus equipment auctions"
+        },
+        {
+          "name": "DLA Disposition Services",
+          "description": "DoD excess property, sometimes routed through SASP"
+        },
+        {
+          "name": "FEMA Surplus Programs",
+          "description": "Emergency-response equipment, generators, shelters"
+        },
+        {
+          "name": "SASP (State Agencies for Surplus Property)",
+          "description": "State-level allocation of federal surplus including trucks, trailers, tools, generators, material-handling equipment, heavy machinery"
+        },
+        {
+          "name": "Local/Municipal Surplus",
+          "description": "Towable equipment, service trucks, jobsite items"
+        }
+      ]
+    }
+  },
+
+  "target_audiences": {
+    "primary": [
+      {
+        "id": "commercial_contractors",
+        "name": "Commercial Contractors",
+        "description": "Construction companies, general contractors, specialty contractors who need logistics support",
+        "pain_points": [
+          "Need equipment fast",
+          "Don't have time to pick up materials themselves",
+          "Lack trucks or staff for hauling",
+          "Need reliable same-day service",
+          "Want simple, no-hassle logistics"
+        ],
+        "messaging_tone": "Fast, reliable, no hassle, cost-effective",
+        "keywords": [
+          "Fast turnaround",
+          "Competitive pricing",
+          "Reliable service",
+          "Flexible solutions",
+          "Easy to work with"
+        ]
+      },
+      {
+        "id": "government_buyers",
+        "name": "Government Buyers",
+        "description": "Federal, state, and local government procurement officers, base contracting offices, facility managers",
+        "pain_points": [
+          "Need compliant vendors",
+          "Require proper certifications",
+          "Value past performance records",
+          "Need clear capabilities statements",
+          "Prefer veteran-owned businesses for set-asides"
+        ],
+        "messaging_tone": "Compliant, certified, proven, ready",
+        "keywords": [
+          "Compliant with FAR",
+          "Past performance record",
+          "Verified certifications",
+          "Clear capabilities statement",
+          "Small business status",
+          "Registered and ready to bid"
+        ]
+      }
+    ],
+    "secondary": []
+  },
+
+  "competitive_positioning": {
+    "value_propositions": {
+      "universal": "Military precision meets commercial flexibility",
+      "for_commercial": "Fast, reliable equipment logistics without the hassle",
+      "for_government": "VOSB-certified, compliant partner with proven performance"
+    },
+    "competitive_advantages": [
+      {
+        "advantage": "SASP Equipment Sourcing",
+        "description": "Access to federal surplus equipment at extremely low cost through SASP programs",
+        "impact": "Far lower equipment costs than typical small logistics contractors, enabling competitive pricing"
+      },
+      {
+        "advantage": "VOSB Status",
+        "description": "Veteran-Owned Small Business certification (planned)",
+        "impact": "Access to set-aside contracts and preference-based awards in construction, base support, and supply/logistics categories"
+      },
+      {
+        "advantage": "Dual Market Capability",
+        "description": "Structured to serve both commercial and government clients",
+        "impact": "Diversified revenue streams, broader market access"
+      },
+      {
+        "advantage": "Quick Response",
+        "description": "Same-day and urgent response capability",
+        "impact": "Meets contractor needs for fast turnaround"
+      },
+      {
+        "advantage": "Remote Access",
+        "description": "Capability to serve remote and difficult-access locations",
+        "impact": "Serves projects other logistics companies won't touch",
+        "status": "phase_2",
+        "notes": "Not available initially - requires LMTV/HMMWV and off-road trailer acquisitions"
+      }
+    ],
+    "market_position": "Small, agile logistics company that fills the gap between DIY hauling and expensive national rental companies",
+    "key_differentiators": [
+      "Veteran-owned (VOSB eligible)",
+      "Low overhead through surplus equipment acquisition",
+      "Dual commercial/government focus",
+      "Local, responsive service"
+    ]
+  },
+
+  "brand": {
+    "personality": {
+      "traits": [
+        "Professional but approachable",
+        "Confident but not arrogant",
+        "Experienced but still flexible",
+        "Veteran-owned pride without preachiness"
+      ],
+      "tone": "Warm, direct, reliable"
+    },
+    "voice": {
+      "commercial_tone": {
+        "examples": [
+          "We get it done fast and right",
+          "No hassle, just results",
+          "Your project, our logistics"
+        ],
+        "emphasis": ["Speed", "Reliability", "Cost-effectiveness"]
+      },
+      "government_tone": {
+        "examples": [
+          "Compliant, certified, and ready",
+          "Proven performance for federal contracts",
+          "VOSB-certified logistics partner"
+        ],
+        "emphasis": ["Compliance", "Certifications", "Past performance"]
+      }
+    },
+    "writing_style": {
+      "general": [
+        "Conversational but professional",
+        "Second person ('you') for engagement",
+        "Short paragraphs (2-3 sentences)",
+        "Active voice, present tense",
+        "Specific, concrete language"
+      ],
+      "avoid": [
+        "Buzzwords: synergy, leveraging, solutions, cutting-edge",
+        "Passive voice",
+        "Vague claims: industry-leading, world-class, best-in-class",
+        "Excessive length",
+        "Military clichés unless authentic"
+      ]
+    },
+    "tagline_options": [
+      "Logistics that moves with you",
+      "Your project. Our logistics.",
+      "Contractor logistics with military precision"
+    ],
+    "visual_identity": {
+      "logo": {
+        "status": "not_created",
+        "direction": null,
+        "files": []
+      },
+      "colors": {
+        "status": "defined",
+        "system": "three_paint_fleet",
+        "paint_supplier": "Rust-Oleum Farm & Implement",
+        "primary": {
+          "name": "Allis Chalmers Orange",
+          "hex": "#C13516",
+          "rgb": "193, 53, 22",
+          "rust_oleum_codes": {
+            "quart": "280156",
+            "gallon": "280176",
+            "spray": "280135"
+          },
+          "usage": {
+            "fleet": "Branded surfaces - trailer boxes, dump beds, equipment housings, high-visibility panels",
+            "digital": "CTA buttons, accent borders, icons, action elements",
+            "role": "Brand recognition, calls-to-action, energy"
+          }
+        },
+        "secondary": {
+          "name": "Massey Ferguson Gray",
+          "hex": "#5A5A5E",
+          "rgb": "90, 90, 94",
+          "finish": "metallic",
+          "rust_oleum_codes": {
+            "quart": "280157",
+            "gallon": "280174",
+            "spray": "280133"
+          },
+          "usage": {
+            "fleet": "Truck cabs, major body panels, structural frames",
+            "digital": "Headers, navigation bars, card backgrounds, secondary sections",
+            "role": "Structure, professionalism, premium feel"
+          }
+        },
+        "accent": {
+          "name": "Low Gloss Black",
+          "hex": "#1A1A1A",
+          "rgb": "26, 26, 26",
+          "finish": "low_gloss_satin",
+          "rust_oleum_codes": {
+            "quart": "280107",
+            "gallon": "280168",
+            "spray": "280125"
+          },
+          "usage": {
+            "fleet": "Wheels, undercarriage, trim, frames, tongues, small components",
+            "digital": "Hero sections, footers, body text, dark backgrounds",
+            "role": "Foundation, contrast, detail work"
+          }
+        },
+        "digital_only": {
+          "warm_white": {"hex": "#F8F7F5", "usage": "Page backgrounds, breathing room"},
+          "pure_white": {"hex": "#FFFFFF", "usage": "Cards, content areas, maximum contrast"},
+          "text_primary": {"hex": "#1E1E1E", "usage": "Body text on light backgrounds"}
+        },
+        "color_interaction_rules": {
+          "allowed": [
+            {"combo": "Orange text on Black background", "verdict": "excellent"},
+            {"combo": "White text on Gray background", "verdict": "excellent"},
+            {"combo": "White text on Black background", "verdict": "excellent"},
+            {"combo": "White text on Orange background", "verdict": "excellent"},
+            {"combo": "Orange buttons on Gray background", "verdict": "excellent"},
+            {"combo": "Orange buttons on Black background", "verdict": "excellent"},
+            {"combo": "Black text on White background", "verdict": "excellent"}
+          ],
+          "forbidden": [
+            {"combo": "Orange text on Gray background", "reason": "Values too similar, poor readability"}
+          ],
+          "notes": "Orange is for OBJECTS (buttons, shapes, painted surfaces) not text on mid-tones. Use white text on gray backgrounds."
+        },
+        "proportions": {
+          "recommended": {"black": "35%", "gray": "30%", "white": "25%", "orange": "10%"},
+          "notes": "Orange used sparingly for maximum impact. Black and gray provide structure."
+        }
+      },
+      "typography": {
+        "status": "not_defined",
+        "headings": null,
+        "body": null,
+        "notes": "Should be clean, readable, professional"
+      }
+    }
+  },
+
+  "website": {
+    "status": "planning",
+    "domain": null,
+    "hosting": {
+      "planned": "Netlify",
+      "notes": "Free tier suitable for business site"
+    },
+    "structure": {
+      "planned_pages": [
+        {
+          "page": "Homepage",
+          "purpose": "Primary landing, dual audience appeal",
+          "content_split": "70% commercial, 30% government-friendly"
+        },
+        {
+          "page": "Services",
+          "purpose": "Detail all four core service areas",
+          "subpages": ["Equipment Transport", "Jobsite Services", "Materials Delivery", "Waste & Container Services"]
+        },
+        {
+          "page": "Government Contracting",
+          "purpose": "Dedicated section for government buyers",
+          "content": ["SAM status", "VOSB certification", "Capabilities statement", "NAICS codes", "Past performance"]
+        },
+        {
+          "page": "About",
+          "purpose": "Company story, veteran ownership, values",
+          "content_split": "50/50 commercial/government appeal"
+        },
+        {
+          "page": "Contact / Quote",
+          "purpose": "Quote requests and contact form",
+          "notes": "Consider separate government inquiry option"
+        }
+      ],
+      "technical_requirements": [
+        "Mobile-responsive",
+        "Fast loading (under 3 seconds)",
+        "HTTPS/SSL",
+        "Section 508 / WCAG 2.1 AA accessibility",
+        "SEO optimized"
+      ]
+    }
+  },
+
+  "business_model": {
+    "revenue_streams": [
+      "Equipment transport fees",
+      "Jobsite service fees",
+      "Materials delivery fees",
+      "Waste hauling fees",
+      "Government contracts (future)"
+    ],
+    "pricing_strategy": {
+      "approach": "Competitive pricing enabled by low equipment costs from SASP",
+      "model": "Quote-based for most services",
+      "notes": "Low overhead = ability to undercut larger competitors while maintaining margins"
+    },
+    "growth_strategy": {
+      "phase_1": "Build fleet through SASP acquisitions, establish local presence with small jobs",
+      "phase_2": "Complete VOSB certification and SAM registration, pursue government contracts",
+      "phase_3": "Scale operations, potentially hire employee/contractor for operations",
+      "notes": "Owner plans to get truck and trailer first, then scale"
+    }
+  },
+
+  "operational_facts": {
+    "current_state": {
+      "employees": 1,
+      "contractors": 0,
+      "operational_status": "pre_operational",
+      "operational_capacity": "Cannot begin operations until Phase 1 equipment (truck and trailer) acquired",
+      "projects_completed": 0,
+      "years_in_business": 0,
+      "notes": "Company registered December 3, 2025. Building capacity. Owner has full-time job."
+    },
+    "availability": {
+      "owner_availability": {
+        "primary_hours": "Evenings and early mornings",
+        "constraints": "Owner has full-time day job",
+        "flexibility": "Can contract people to run equipment during daytime hours if needed"
+      },
+      "business_hours": {
+        "status": "to_be_determined",
+        "notes": "Will depend on contractor availability and job requirements"
+      }
+    },
+    "contact_info": {
+      "phone": {
+        "personal": "805-434-7063",
+        "business": null,
+        "notes": "Business-specific line to be set up"
+      },
+      "email": {
+        "personal": null,
+        "business": null,
+        "notes": "Company email to be set up"
+      },
+      "preferred_contact_method": "Phone (until business systems established)"
+    },
+    "pricing": {
+      "model": "quote_based",
+      "rates": null,
+      "notes": "Pricing not yet established - depends on equipment acquired. All jobs will be quoted individually."
+    },
+    "equipment_interest": {
+      "high_priority": [
+        {
+          "type": "Light towers",
+          "interest_level": "very_high",
+          "notes": "Owner very interested in offering light tower services"
+        }
+      ],
+      "general_interest": [
+        "Generators",
+        "Fuel cubes",
+        "Portable site gear"
+      ]
+    },
+    "what_we_can_claim": [
+      "Veteran-owned (owner is active Utah Army National Guard member)",
+      "100% owned by Christopher Kleinman",
+      "Utah-based (Provo)",
+      "Serving Utah County and I-15 corridor",
+      "Focused on contractor support logistics",
+      "Working toward VOSB certification",
+      "Working toward SAM registration",
+      "Working toward SASP enrollment"
+    ],
+    "what_we_cannot_claim": [
+      "Years of experience (company is new - registered Dec 3, 2025)",
+      "Specific number of projects completed (none yet)",
+      "Specific number of customers served (none yet)",
+      "VOSB certified (in progress, not certified)",
+      "SAM registered (in progress, not registered)",
+      "SASP enrolled (in progress, not enrolled)",
+      "Any specific past performance",
+      "Remote access capability (Phase 2 - not yet available)",
+      "Specific NAICS codes (planned, not registered)",
+      "Currently operational (pre-operational until truck/trailer acquired)"
+    ]
+  },
+
+  "content_rules": {
+    "for_agents": {
+      "mandatory": [
+        "Check this knowledge base before generating ANY content",
+        "Never fabricate statistics, customer counts, or project numbers",
+        "Never claim certifications not listed as 'certified: true'",
+        "Never invent testimonials or quotes",
+        "Always verify claims against operational_facts section",
+        "When in doubt, be honest about being a new company"
+      ],
+      "formatting": {
+        "headlines": "Title Case",
+        "subheadings": "Sentence case",
+        "body": "Sentence case",
+        "ctas": "Action verb + benefit"
+      },
+      "quality_checklist": [
+        "Clear value proposition in first 10 seconds",
+        "Benefits stated before features",
+        "Active voice throughout",
+        "Specific, concrete language",
+        "CTA on every page",
+        "Appropriate for target audience",
+        "No fabricated claims"
+      ]
+    }
+  },
+
+  "design_decisions": {
+    "approved": [
+      {
+        "decision": "Three-paint fleet color system",
+        "date": "2025-12-09",
+        "details": "Orange (Allis Chalmers) for branded surfaces, Gray (Massey Ferguson) for structure, Black (Low Gloss) for accents",
+        "rationale": "Paint-anchored to Rust-Oleum Farm & Implement line for availability and touch-up consistency. Gray chosen over navy due to better contrast with orange."
+      },
+      {
+        "decision": "No orange text on gray backgrounds",
+        "date": "2025-12-09",
+        "details": "Orange text is forbidden on Massey Ferguson Gray - use white text instead. Orange buttons/shapes on gray are fine.",
+        "rationale": "Color values too similar, poor readability. Orange should be used for objects, not text on mid-tones."
+      }
+    ],
+    "pending_approval": [],
+    "rejected": [
+      {
+        "decision": "Navy as secondary color",
+        "date": "2025-12-09",
+        "reason": "Orange text on navy had poor contrast/readability. Also not paint-anchored."
+      }
+    ],
+    "notes": "All design decisions (fonts, colors, layouts) must be logged here and approved before implementation"
+  },
+
+  "related_entities": {
+    "family_businesses": [
+      {
+        "name": "Kleinman Analytic Solutions",
+        "owner": "Father",
+        "relationship": "Potential collaboration"
+      }
+    ],
+    "owner_other_ventures": [
+      {
+        "name": "RIA (Registered Investment Advisor)",
+        "status": "Planning - Series 65 exam January 2025",
+        "infrastructure": "XYPN"
+      },
+      {
+        "name": "Portable Dishwasher Rentals",
+        "status": "Concept - waiting on truck/trailer",
+        "market": "Utah County, Provo basement apartments"
+      }
+    ]
+  }
+}

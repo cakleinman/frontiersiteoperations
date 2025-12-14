@@ -1,0 +1,7 @@
+# Frontier Site Operations
+# https://frontiersiteoperations.com
+
+User-agent: *
+Allow: /
+
+Sitemap: https://frontiersiteoperations.com/sitemap.xml

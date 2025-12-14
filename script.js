@@ -93,52 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Form validation (for contact page)
-function validateContactForm() {
-    const form = document.getElementById('contactForm');
-    if (!form) return;
-    
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const phone = document.getElementById('phone').value.trim();
-        const message = document.getElementById('message').value.trim();
-        
-        let isValid = true;
-        let errorMessage = '';
-        
-        if (name === '') {
-            errorMessage += 'Please enter your name.\n';
-            isValid = false;
-        }
-        
-        if (email === '' || !isValidEmail(email)) {
-            errorMessage += 'Please enter a valid email address.\n';
-            isValid = false;
-        }
-        
-        if (phone === '' || !isValidPhone(phone)) {
-            errorMessage += 'Please enter a valid phone number.\n';
-            isValid = false;
-        }
-        
-        if (message === '') {
-            errorMessage += 'Please enter a message.\n';
-            isValid = false;
-        }
-        
-        if (isValid) {
-            // Submit form (you'll need to add your form submission logic here)
-            alert('Thank you for your message! We\'ll be in touch soon.');
-            form.reset();
-        } else {
-            alert(errorMessage);
-        }
-    });
-}
-
+// Form validation helper functions
 function isValidEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
@@ -149,5 +104,40 @@ function isValidPhone(phone) {
     return re.test(phone) && phone.replace(/\D/g, '').length >= 10;
 }
 
+// Form validation (for contact page) - validates before Netlify submission
+function initContactForm() {
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+
+    form.addEventListener('submit', function(e) {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+
+        let errors = [];
+
+        if (name === '') {
+            errors.push('Please enter your name.');
+        }
+
+        if (email === '' || !isValidEmail(email)) {
+            errors.push('Please enter a valid email address.');
+        }
+
+        if (phone !== '' && !isValidPhone(phone)) {
+            errors.push('Please enter a valid phone number.');
+        }
+
+        if (errors.length > 0) {
+            e.preventDefault();
+            alert(errors.join('\n'));
+            return false;
+        }
+
+        // Form is valid - let Netlify handle the submission
+        return true;
+    });
+}
+
 // Initialize form validation
-document.addEventListener('DOMContentLoaded', validateContactForm);
+document.addEventListener('DOMContentLoaded', initContactForm);

@@ -13,8 +13,8 @@
   <line x1="260" y1="200" x2="260" y2="300" stroke="#718096" stroke-width="2"/>
   
   <!-- Truck cab -->
-  <rect x="300" y="180" width="180" height="120" rx="8" fill="#FF4500"/>
-  <path d="M300 180 Q300 150 330 150 L450 150 Q480 150 480 180 Z" fill="#E03E00"/>
+  <rect x="300" y="180" width="180" height="120" rx="8" fill="#C13516"/>
+  <path d="M300 180 Q300 150 330 150 L450 150 Q480 150 480 180 Z" fill="#A12D13"/>
   
   <!-- Truck windows -->
   <rect x="320" y="165" width="60" height="50" rx="4" fill="#2D3748" opacity="0.3"/>
@@ -41,13 +41,13 @@
   <!-- Truck wheels (dually - double rear wheels) -->
   <circle cx="360" cy="310" r="28" fill="#2D3748"/>
   <circle cx="360" cy="310" r="20" fill="#718096"/>
-  <circle cx="360" cy="310" r="12" fill="#FF4500"/>
+  <circle cx="360" cy="310" r="12" fill="#C13516"/>
   
   <!-- Dually rear wheels -->
   <ellipse cx="430" cy="315" rx="18" ry="28" fill="#2D3748"/>
   <circle cx="440" cy="310" r="28" fill="#2D3748"/>
   <circle cx="440" cy="310" r="20" fill="#718096"/>
-  <circle cx="440" cy="310" r="12" fill="#FF4500"/>
+  <circle cx="440" cy="310" r="12" fill="#C13516"/>
   
   <!-- Hitch connection -->
   <path d="M300 240 L280 250 L280 260 L300 270" fill="#718096"/>
@@ -55,14 +55,14 @@
   
   <!-- Brand text on trailer -->
   <text x="120" y="255" font-family="'Archivo', sans-serif" font-weight="900" font-size="24" fill="#2D3748" text-anchor="middle">FRONTIER</text>
-  <text x="120" y="275" font-family="'Archivo', sans-serif" font-weight="600" font-size="12" fill="#FF4500" text-anchor="middle" letter-spacing="2">SITE OPERATIONS</text>
+  <text x="120" y="275" font-family="'Archivo', sans-serif" font-weight="600" font-size="12" fill="#C13516" text-anchor="middle" letter-spacing="2">SITE OPERATIONS</text>
   
   <!-- Ground shadow -->
   <ellipse cx="250" cy="340" rx="260" ry="15" fill="#2D3748" opacity="0.1"/>
   
   <!-- Motion lines (speed effect) -->
-  <line x1="10" y1="220" x2="0" y2="220" stroke="#FF4500" stroke-width="3" opacity="0.3"/>
-  <line x1="10" y1="240" x2="0" y2="240" stroke="#FF4500" stroke-width="3" opacity="0.3"/>
-  <line x1="10" y1="260" x2="0" y2="260" stroke="#FF4500" stroke-width="3" opacity="0.3"/>
-  <line x1="10" y1="280" x2="0" y2="280" stroke="#FF4500" stroke-width="3" opacity="0.3"/>
+  <line x1="10" y1="220" x2="0" y2="220" stroke="#C13516" stroke-width="3" opacity="0.3"/>
+  <line x1="10" y1="240" x2="0" y2="240" stroke="#C13516" stroke-width="3" opacity="0.3"/>
+  <line x1="10" y1="260" x2="0" y2="260" stroke="#C13516" stroke-width="3" opacity="0.3"/>
+  <line x1="10" y1="280" x2="0" y2="280" stroke="#C13516" stroke-width="3" opacity="0.3"/>
 </svg>

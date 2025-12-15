@@ -910,6 +910,10 @@ section:nth-child(odd) {
     gap: 4rem;
 }
 
+.contact-info {
+    padding-top: 3rem;
+}
+
 .contact-info h2 {
     margin-bottom: 1.5rem;
 }

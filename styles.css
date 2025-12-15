@@ -1333,8 +1333,9 @@ section:nth-child(odd) {
     background: var(--white);
 }
 
+.service-detail.alt .detail-card.featured,
 .detail-card.featured {
-    background: linear-gradient(135deg, var(--brand-orange) 0%, var(--brand-orange-dark) 100%);
+    background: linear-gradient(135deg, var(--brand-orange) 0%, var(--brand-orange-dark) 100%) !important;
     color: var(--white);
     border-left: 4px solid var(--low-gloss-black);
 }

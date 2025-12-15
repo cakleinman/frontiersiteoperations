@@ -250,6 +250,7 @@ p {
         min-height: 44px;
         justify-content: center;
         align-items: center;
+        margin-left: auto;
     }
 
     .nav-menu {

@@ -686,6 +686,7 @@ section:nth-child(odd) {
     font-family: var(--font-mono);
     line-height: 1;
     opacity: 0.3;
+    min-width: 4.5rem;
 }
 
 .why-text h3 {

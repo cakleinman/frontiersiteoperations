@@ -739,19 +739,21 @@ section:nth-child(odd) {
 
 /* CTA Section */
 .cta-section {
-    background: var(--low-gloss-black);
+    background: var(--low-gloss-black) !important;
+    background-color: #1A1A1A !important;
     color: var(--white);
     text-align: center;
+    padding: 5rem 0;
 }
 
 .cta-content h2 {
-    color: var(--white);
+    color: var(--white) !important;
     margin-bottom: 1rem;
 }
 
 .cta-content p {
     font-size: 1.25rem;
-    color: var(--light-gray);
+    color: var(--light-gray) !important;
     margin-bottom: 2.5rem;
     max-width: 600px;
     margin-left: auto;

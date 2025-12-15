@@ -1,0 +1,10 @@
+<svg width="200" height="45" viewBox="0 0 200 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Accent bar -->
+  <rect x="0" y="3.5" width="4" height="38" fill="#C13516"/>
+
+  <!-- FRONTIER text -->
+  <text x="15" y="27" font-family="'Barlow Condensed', sans-serif" font-weight="600" font-size="24" fill="#FFFFFF" letter-spacing="1.92">FRONTIER</text>
+
+  <!-- SITE OPERATIONS text -->
+  <text x="15" y="38" font-family="'Barlow Condensed', sans-serif" font-weight="600" font-size="8.8" fill="#9A9A9A" letter-spacing="2.464">SITE OPERATIONS</text>
+</svg>

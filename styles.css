@@ -15,6 +15,7 @@
     --warm-white: #F8F6F3;
     --off-white: #F2EDE8;
     --light-gray: #E8E6E3;
+    --gray-light: #E8E6E3;
     --mid-gray: #9A9A9A;
     --charcoal: #2D3748;
     --white: #FFFFFF;
@@ -750,7 +751,7 @@ section:nth-child(odd) {
 
 .cta-content p {
     font-size: 1.25rem;
-    color: var(--gray-light);
+    color: var(--light-gray);
     margin-bottom: 2.5rem;
     max-width: 600px;
     margin-left: auto;

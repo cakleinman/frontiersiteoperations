@@ -1528,6 +1528,11 @@ section:nth-child(odd) {
         text-align: center;
     }
 
+    .footer-logo {
+        display: block;
+        margin: 0 auto 1rem;
+    }
+
     .footer-col ul {
         margin-bottom: 0;
     }

@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSO Brand Standards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* FSO Brand Colors */
+            --allis-chalmers-orange: #D35F2C;
+            --allis-orange-dark: #B84E22;
+            --massey-ferguson-gray: #5A5A5A;
+            --low-gloss-black: #1A1A1A;
+            
+            /* Supporting */
+            --warm-white: #F8F6F3;
+            --off-white: #F2EDE8;
+            --light-gray: #E8E6E3;
+            --mid-gray: #9A9A9A;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Barlow', sans-serif;
+            font-weight: 400;
+            background: var(--warm-white);
+            color: var(--low-gloss-black);
+            line-height: 1.6;
+            font-size: 15px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 50px;
+        }
+        
+        /* Header */
+        header {
+            margin-bottom: 70px;
+            padding-bottom: 40px;
+            border-bottom: 3px solid var(--low-gloss-black);
+        }
+        
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        
+        .header-logo {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+        }
+        
+        .header-logo .accent {
+            width: 4px;
+            height: 38px;
+            background: var(--allis-chalmers-orange);
+        }
+        
+        .header-logo .text-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+        
+        .header-logo .primary {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            letter-spacing: 0.08em;
+            color: var(--low-gloss-black);
+            line-height: 1;
+        }
+        
+        .header-logo .secondary {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 0.55rem;
+            letter-spacing: 0.28em;
+            color: var(--massey-ferguson-gray);
+            line-height: 1;
+        }
+        
+        .header-meta {
+            text-align: right;
+            font-size: 0.75rem;
+            color: var(--massey-ferguson-gray);
+            letter-spacing: 0.05em;
+        }
+        
+        .header-meta strong {
+            display: block;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 600;
+            font-size: 0.65rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--low-gloss-black);
+            margin-bottom: 4px;
+        }
+        
+        h1 {
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            font-size: 2.2rem;
+            letter-spacing: 0.01em;
+            line-height: 1.1;
+        }
+        
+        /* Sections */
+        section {
+            margin-bottom: 70px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 35px;
+        }
+        
+        .section-number {
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            color: white;
+            background: var(--low-gloss-black);
+            padding: 6px 10px;
+        }
+        
+        h2 {
+            font-family: 'Archivo', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        
+        h3 {
+            font-family: 'Archivo', sans-serif;
+            font-weight: 600;
+            font-size: 0.75rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--massey-ferguson-gray);
+            margin-bottom: 15px;
+        }
+        
+        p {
+            color: var(--massey-ferguson-gray);
+            max-width: 600px;
+        }
+        
+        /* Primary Logo Display */
+        .primary-logo-display {
+            background: white;
+            border: 1px solid var(--light-gray);
+            padding: 80px 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo-primary {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+        }
+        
+        .logo-primary .accent {
+            width: 4px;
+            height: 38px;
+            background: var(--low-gloss-black);
+        }
+        
+        .logo-primary .text-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+        
+        .logo-primary .primary {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            letter-spacing: 0.08em;
+            color: var(--low-gloss-black);
+            line-height: 1;
+        }
+        
+        .logo-primary .secondary {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 0.55rem;
+            letter-spacing: 0.28em;
+            color: var(--massey-ferguson-gray);
+            line-height: 1;
+        }
+        
+        .logo-specs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        .spec-item {
+            background: white;
+            border: 1px solid var(--light-gray);
+            padding: 20px;
+        }
+        
+        .spec-item h4 {
+            font-family: 'Archivo', sans-serif;
+            font-weight: 600;
+            font-size: 0.65rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--massey-ferguson-gray);
+            margin-bottom: 8px;
+        }
+        
+        .spec-item p {
+            font-size: 0.85rem;
+            color: var(--low-gloss-black);
+            font-weight: 500;
+        }
+        
+        .spec-item code {
+            font-family: monospace;
+            font-size: 0.8rem;
+            background: var(--off-white);
+            padding: 2px 6px;
+        }
+        
+        /* Logo Variations Grid */
+        .variations-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .variation-card {
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .variation-card.on-white {
+            background: white;
+            border: 1px solid var(--light-gray);
+        }
+        
+        .variation-card.on-black {
+            background: var(--low-gloss-black);
+        }
+        
+        .variation-card.on-orange {
+            background: var(--allis-chalmers-orange);
+        }
+        
+        .variation-card.on-gray {
+            background: var(--massey-ferguson-gray);
+        }
+        
+        .variation-card .logo-display {
+            margin-bottom: 20px;
+        }
+        
+        .variation-label {
+            font-size: 0.65rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--massey-ferguson-gray);
+        }
+        
+        .variation-card.on-black .variation-label,
+        .variation-card.on-orange .variation-label,
+        .variation-card.on-gray .variation-label {
+            color: rgba(255,255,255,0.5);
+        }
+        
+        /* Logo on different backgrounds */
+        .logo-on-white .accent { background: var(--allis-chalmers-orange); }
+        .logo-on-white .primary { color: var(--low-gloss-black); }
+        .logo-on-white .secondary { color: var(--massey-ferguson-gray); }
+        
+        .logo-on-black .accent { background: var(--allis-chalmers-orange); }
+        .logo-on-black .primary { color: white; }
+        .logo-on-black .secondary { color: var(--mid-gray); }
+        
+        .logo-on-orange .accent { background: var(--low-gloss-black); }
+        .logo-on-orange .primary { color: white; }
+        .logo-on-orange .secondary { color: var(--low-gloss-black); }
+        
+        .logo-on-gray .accent { background: var(--allis-chalmers-orange); }
+        .logo-on-gray .primary { color: white; }
+        .logo-on-gray .secondary { color: var(--light-gray); }
+        
+        /* Monochrome versions */
+        .logo-mono-black .accent { background: var(--low-gloss-black); }
+        .logo-mono-black .primary { color: var(--low-gloss-black); }
+        .logo-mono-black .secondary { color: var(--low-gloss-black); }
+        
+        .logo-mono-white .accent { background: white; }
+        .logo-mono-white .primary { color: white; }
+        .logo-mono-white .secondary { color: white; }
+        
+        /* Compact / Monogram */
+        .compact-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .compact-card {
+            padding: 35px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .compact-card.on-white {
+            background: white;
+            border: 1px solid var(--light-gray);
+        }
+        
+        .compact-card.on-black {
+            background: var(--low-gloss-black);
+        }
+        
+        .compact-card.on-orange {
+            background: var(--allis-chalmers-orange);
+        }
+        
+        .logo-monogram {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .logo-monogram .accent {
+            width: 3px;
+            height: 28px;
+        }
+        
+        .logo-monogram .letters {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 1.4rem;
+            letter-spacing: 0.06em;
+            line-height: 1;
+        }
+        
+        .mono-on-white .accent { background: var(--allis-chalmers-orange); }
+        .mono-on-white .letters { color: var(--low-gloss-black); }
+        
+        .mono-on-black .accent { background: var(--allis-chalmers-orange); }
+        .mono-on-black .letters { color: white; }
+        
+        .mono-on-orange .accent { background: var(--low-gloss-black); }
+        .mono-on-orange .letters { color: white; }
+        
+        .mono-single-black .accent { background: var(--low-gloss-black); }
+        .mono-single-black .letters { color: var(--low-gloss-black); }
+        
+        .compact-label {
+            font-size: 0.6rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--massey-ferguson-gray);
+        }
+        
+        .compact-card.on-black .compact-label,
+        .compact-card.on-orange .compact-label {
+            color: rgba(255,255,255,0.5);
+        }
+        
+        /* Color Palette */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .color-card {
+            background: white;
+            border: 1px solid var(--light-gray);
+            overflow: hidden;
+        }
+        
+        .color-swatch {
+            height: 100px;
+        }
+        
+        .color-info {
+            padding: 20px;
+        }
+        
+        .color-name {
+            font-family: 'Archivo', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+        
+        .color-values {
+            font-size: 0.75rem;
+            color: var(--massey-ferguson-gray);
+            font-family: monospace;
+        }
+        
+        .color-values span {
+            display: block;
+            margin-bottom: 3px;
+        }
+        
+        .color-usage {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--light-gray);
+            font-size: 0.8rem;
+            color: var(--massey-ferguson-gray);
+        }
+        
+        /* Typography */
+        .type-specimen {
+            background: white;
+            border: 1px solid var(--light-gray);
+            padding: 40px;
+            margin-bottom: 25px;
+        }
+        
+        .type-name {
+            font-size: 0.65rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--massey-ferguson-gray);
+            margin-bottom: 15px;
+        }
+        
+        .type-sample-condensed {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            margin-bottom: 10px;
+            color: var(--low-gloss-black);
+        }
+        
+        .type-sample-body {
+            font-family: 'Barlow', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--massey-ferguson-gray);
+            max-width: 500px;
+        }
+        
+        .type-weights {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--light-gray);
+        }
+        
+        .type-weight {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+        }
+        
+        .type-weight span {
+            display: block;
+            font-size: 0.6rem;
+            letter-spacing: 0.1em;
+            color: var(--massey-ferguson-gray);
+            margin-top: 4px;
+            font-family: 'Barlow', sans-serif;
+        }
+        
+        /* Clear Space & Sizing */
+        .clearspace-demo {
+            background: white;
+            border: 1px solid var(--light-gray);
+            padding: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .clearspace-box {
+            border: 1px dashed var(--allis-chalmers-orange);
+            padding: 30px 35px;
+            position: relative;
+        }
+        
+        .clearspace-label {
+            position: absolute;
+            font-size: 0.55rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--allis-chalmers-orange);
+        }
+        
+        .clearspace-label.top {
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .clearspace-label.left {
+            left: -45px;
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+        }
+        
+        .min-sizes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        
+        .min-size-card {
+            background: white;
+            border: 1px solid var(--light-gray);
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .min-size-card h4 {
+            font-family: 'Archivo', sans-serif;
+            font-weight: 600;
+            font-size: 0.65rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--massey-ferguson-gray);
+            margin-bottom: 20px;
+        }
+        
+        .min-size-card .demo {
+            margin-bottom: 15px;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .min-size-card .size-value {
+            font-family: monospace;
+            font-size: 0.8rem;
+            color: var(--massey-ferguson-gray);
+        }
+        
+        .size-full { transform: scale(1); }
+        .size-medium { transform: scale(0.7); }
+        .size-small { transform: scale(0.45); }
+        .size-mono-small { transform: scale(0.8); }
+        
+        /* Usage Guidelines */
+        .usage-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        
+        .usage-card {
+            background: white;
+            border: 1px solid var(--light-gray);
+            padding: 30px;
+        }
+        
+        .usage-card.do {
+            border-top: 3px solid #2D8A4E;
+        }
+        
+        .usage-card.dont {
+            border-top: 3px solid #C44536;
+        }
+        
+        .usage-card h4 {
+            font-family: 'Archivo', sans-serif;
+            font-weight: 600;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        
+        .usage-card.do h4 { color: #2D8A4E; }
+        .usage-card.dont h4 { color: #C44536; }
+        
+        .usage-card ul {
+            list-style: none;
+            font-size: 0.85rem;
+            color: var(--massey-ferguson-gray);
+        }
+        
+        .usage-card li {
+            margin-bottom: 8px;
+            padding-left: 16px;
+            position: relative;
+        }
+        
+        .usage-card li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 6px;
+            height: 2px;
+        }
+        
+        .usage-card.do li::before { background: #2D8A4E; }
+        .usage-card.dont li::before { background: #C44536; }
+        
+        /* Application Examples */
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        
+        .app-card {
+            background: white;
+            border: 1px solid var(--light-gray);
+            overflow: hidden;
+        }
+        
+        .app-preview {
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .app-preview.vehicle {
+            background: linear-gradient(135deg, #555 0%, #444 100%);
+        }
+        
+        .app-preview.vehicle .door-panel {
+            width: 200px;
+            height: 120px;
+            background: var(--allis-chalmers-orange);
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 
+                inset 0 1px 0 rgba(255,255,255,0.15),
+                inset 0 -1px 0 rgba(0,0,0,0.2);
+        }
+        
+        .app-preview.hardhat {
+            background: linear-gradient(135deg, #666 0%, #555 100%);
+        }
+        
+        .app-preview.hardhat .hat {
+            width: 90px;
+            height: 55px;
+            background: var(--allis-chalmers-orange);
+            border-radius: 50% 50% 5px 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        
+        .app-preview.businesscard {
+            background: var(--off-white);
+        }
+        
+        .app-preview.businesscard .card {
+            width: 180px;
+            height: 100px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .app-preview.businesscard .card-footer {
+            font-family: 'Barlow', sans-serif;
+            font-size: 0.45rem;
+            color: var(--massey-ferguson-gray);
+        }
+        
+        .app-preview.invoice {
+            background: var(--off-white);
+        }
+        
+        .app-preview.invoice .doc {
+            width: 140px;
+            height: 180px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px;
+        }
+        
+        .app-preview.invoice .doc-header {
+            border-bottom: 1px solid var(--light-gray);
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .app-preview.invoice .doc-lines {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        
+        .app-preview.invoice .doc-line {
+            height: 4px;
+            background: var(--light-gray);
+            border-radius: 2px;
+        }
+        
+        .app-preview.invoice .doc-line:nth-child(2) { width: 80%; }
+        .app-preview.invoice .doc-line:nth-child(3) { width: 60%; }
+        .app-preview.invoice .doc-line:nth-child(4) { width: 90%; }
+        .app-preview.invoice .doc-line:nth-child(5) { width: 40%; }
+        
+        .app-info {
+            padding: 20px;
+        }
+        
+        .app-info h4 {
+            font-family: 'Archivo', sans-serif;
+            font-weight: 600;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 6px;
+        }
+        
+        .app-info p {
+            font-size: 0.8rem;
+            color: var(--massey-ferguson-gray);
+        }
+        
+        /* Small logo for applications */
+        .logo-small {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transform: scale(0.55);
+        }
+        
+        .logo-small .accent {
+            width: 4px;
+            height: 38px;
+        }
+        
+        .logo-small .text-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+        
+        .logo-small .primary {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            letter-spacing: 0.08em;
+            line-height: 1;
+        }
+        
+        .logo-small .secondary {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 0.55rem;
+            letter-spacing: 0.28em;
+            line-height: 1;
+        }
+        
+        .logo-tiny {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transform: scale(0.4);
+        }
+        
+        .logo-tiny .accent {
+            width: 3px;
+            height: 28px;
+        }
+        
+        .logo-tiny .letters {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 1.4rem;
+            letter-spacing: 0.06em;
+            line-height: 1;
+        }
+        
+        /* File Formats */
+        .formats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        
+        .format-card {
+            background: white;
+            border: 1px solid var(--light-gray);
+            padding: 25px 20px;
+            text-align: center;
+        }
+        
+        .format-ext {
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--low-gloss-black);
+            margin-bottom: 8px;
+        }
+        
+        .format-name {
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--massey-ferguson-gray);
+            margin-bottom: 10px;
+        }
+        
+        .format-use {
+            font-size: 0.75rem;
+            color: var(--massey-ferguson-gray);
+        }
+        
+        /* Footer */
+        footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid var(--light-gray);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        footer p {
+            font-size: 0.75rem;
+            color: var(--massey-ferguson-gray);
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            opacity: 0.5;
+        }
+        
+        .footer-logo .accent {
+            width: 3px;
+            height: 20px;
+            background: var(--massey-ferguson-gray);
+        }
+        
+        .footer-logo .letters {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.06em;
+            color: var(--massey-ferguson-gray);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Header -->
+        <header>
+            <div class="header-top">
+                <div class="header-logo">
+                    <div class="accent"></div>
+                    <div class="text-group">
+                        <span class="primary">FRONTIER</span>
+                        <span class="secondary">SITE OPERATIONS</span>
+                    </div>
+                </div>
+                <div class="header-meta">
+                    <strong>Brand Standards</strong>
+                    Version 1.0 — December 2024
+                </div>
+            </div>
+            <h1>Brand Identity Guidelines</h1>
+        </header>
+        
+        <!-- 01: Primary Logo -->
+        <section>
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2>Primary Logo</h2>
+            </div>
+            
+            <div class="primary-logo-display">
+                <div class="logo-primary logo-on-white" style="transform: scale(1.8);">
+                    <div class="accent"></div>
+                    <div class="text-group">
+                        <span class="primary">FRONTIER</span>
+                        <span class="secondary">SITE OPERATIONS</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="logo-specs">
+                <div class="spec-item">
+                    <h4>Primary Typeface</h4>
+                    <p>Barlow Condensed SemiBold</p>
+                    <p><code>letter-spacing: 0.08em</code></p>
+                </div>
+                <div class="spec-item">
+                    <h4>Secondary Typeface</h4>
+                    <p>Barlow Condensed SemiBold</p>
+                    <p><code>letter-spacing: 0.28em</code></p>
+                </div>
+                <div class="spec-item">
+                    <h4>Accent Bar</h4>
+                    <p>4px width × 38px height</p>
+                    <p><code>gap: 11px</code></p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 02: Logo Variations -->
+        <section>
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2>Color Variations</h2>
+            </div>
+            
+            <p style="margin-bottom: 30px;">The logo adapts to different background colors while maintaining brand recognition. The accent bar shifts between orange and black depending on background.</p>
+            
+            <div class="variations-grid">
+                <div class="variation-card on-white">
+                    <div class="logo-display">
+                        <div class="logo-primary logo-on-white">
+                            <div class="accent"></div>
+                            <div class="text-group">
+                                <span class="primary">FRONTIER</span>
+                                <span class="secondary">SITE OPERATIONS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="variation-label">On White — Primary</span>
+                </div>
+                
+                <div class="variation-card on-black">
+                    <div class="logo-display">
+                        <div class="logo-primary logo-on-black">
+                            <div class="accent"></div>
+                            <div class="text-group">
+                                <span class="primary">FRONTIER</span>
+                                <span class="secondary">SITE OPERATIONS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="variation-label">On Black</span>
+                </div>
+                
+                <div class="variation-card on-orange">
+                    <div class="logo-display">
+                        <div class="logo-primary logo-on-orange">
+                            <div class="accent"></div>
+                            <div class="text-group">
+                                <span class="primary">FRONTIER</span>
+                                <span class="secondary">SITE OPERATIONS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="variation-label">On Orange — Vehicles</span>
+                </div>
+                
+                <div class="variation-card on-gray">
+                    <div class="logo-display">
+                        <div class="logo-primary logo-on-gray">
+                            <div class="accent"></div>
+                            <div class="text-group">
+                                <span class="primary">FRONTIER</span>
+                                <span class="secondary">SITE OPERATIONS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="variation-label">On Gray</span>
+                </div>
+            </div>
+            
+            <h3>Single-Color Versions</h3>
+            <p style="margin-bottom: 20px;">For embroidery, stencils, single-color print, and engraving applications.</p>
+            
+            <div class="variations-grid">
+                <div class="variation-card on-white">
+                    <div class="logo-display">
+                        <div class="logo-primary logo-mono-black">
+                            <div class="accent"></div>
+                            <div class="text-group">
+                                <span class="primary">FRONTIER</span>
+                                <span class="secondary">SITE OPERATIONS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="variation-label">Monochrome Black</span>
+                </div>
+                
+                <div class="variation-card on-black">
+                    <div class="logo-display">
+                        <div class="logo-primary logo-mono-white">
+                            <div class="accent"></div>
+                            <div class="text-group">
+                                <span class="primary">FRONTIER</span>
+                                <span class="secondary">SITE OPERATIONS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="variation-label">Monochrome White</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 03: Compact Mark -->
+        <section>
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2>Compact Mark (FSO)</h2>
+            </div>
+            
+            <p style="margin-bottom: 30px;">Use the FSO monogram when space is limited: hard hats, favicons, equipment labels, social media avatars, and small promotional items.</p>
+            
+            <div class="compact-grid">
+                <div class="compact-card on-white">
+                    <div class="logo-monogram mono-on-white">
+                        <div class="accent"></div>
+                        <span class="letters">FSO</span>
+                    </div>
+                    <span class="compact-label">On White</span>
+                </div>
+                
+                <div class="compact-card on-black">
+                    <div class="logo-monogram mono-on-black">
+                        <div class="accent"></div>
+                        <span class="letters">FSO</span>
+                    </div>
+                    <span class="compact-label">On Black</span>
+                </div>
+                
+                <div class="compact-card on-orange">
+                    <div class="logo-monogram mono-on-orange">
+                        <div class="accent"></div>
+                        <span class="letters">FSO</span>
+                    </div>
+                    <span class="compact-label">On Orange</span>
+                </div>
+                
+                <div class="compact-card on-white">
+                    <div class="logo-monogram mono-single-black">
+                        <div class="accent"></div>
+                        <span class="letters">FSO</span>
+                    </div>
+                    <span class="compact-label">Single Color</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 04: Color Palette -->
+        <section>
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2>Color Palette</h2>
+            </div>
+            
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--allis-chalmers-orange);"></div>
+                    <div class="color-info">
+                        <h4 class="color-name">Allis Chalmers Orange</h4>
+                        <div class="color-values">
+                            <span>HEX: #D35F2C</span>
+                            <span>RGB: 211, 95, 44</span>
+                            <span>CMYK: 0, 75, 90, 10</span>
+                        </div>
+                        <p class="color-usage">Primary brand accent. Vehicles, equipment, highlights.</p>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--low-gloss-black);"></div>
+                    <div class="color-info">
+                        <h4 class="color-name">Low Gloss Black</h4>
+                        <div class="color-values">
+                            <span>HEX: #1A1A1A</span>
+                            <span>RGB: 26, 26, 26</span>
+                            <span>CMYK: 0, 0, 0, 95</span>
+                        </div>
+                        <p class="color-usage">Primary text, logo on light backgrounds.</p>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--massey-ferguson-gray);"></div>
+                    <div class="color-info">
+                        <h4 class="color-name">Massey Ferguson Gray</h4>
+                        <div class="color-values">
+                            <span>HEX: #5A5A5A</span>
+                            <span>RGB: 90, 90, 90</span>
+                            <span>CMYK: 0, 0, 0, 70</span>
+                        </div>
+                        <p class="color-usage">Secondary text, equipment accents.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 05: Typography -->
+        <section>
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2>Typography</h2>
+            </div>
+            
+            <div class="type-specimen">
+                <p class="type-name">Primary — Barlow Condensed</p>
+                <p class="type-sample-condensed">FRONTIER SITE OPERATIONS</p>
+                <p class="type-sample-body">Barlow Condensed is used for the logo, headlines, and display text. Its industrial character and excellent legibility at distance make it ideal for vehicle graphics and signage.</p>
+                <div class="type-weights">
+                    <div class="type-weight" style="font-weight: 500;">MEDIUM 500 <span>Secondary text</span></div>
+                    <div class="type-weight" style="font-weight: 600;">SEMIBOLD 600 <span>Logo, headlines</span></div>
+                    <div class="type-weight" style="font-weight: 700;">BOLD 700 <span>Emphasis</span></div>
+                </div>
+            </div>
+            
+            <div class="type-specimen">
+                <p class="type-name">Body — Barlow</p>
+                <p class="type-sample-body" style="font-size: 1.1rem; max-width: 100%;">Barlow is the workhorse typeface for body copy, documents, proposals, and digital interfaces. It shares DNA with Barlow Condensed while offering better readability for longer text. Use weights 400-600 for body and UI elements.</p>
+            </div>
+        </section>
+        
+        <!-- 06: Clear Space & Minimum Size -->
+        <section>
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2>Clear Space & Minimum Size</h2>
+            </div>
+            
+            <p style="margin-bottom: 30px;">Maintain clear space around the logo equal to the height of the accent bar. This ensures the logo has room to breathe and maintains visual impact.</p>
+            
+            <div class="clearspace-demo">
+                <div class="clearspace-box">
+                    <span class="clearspace-label top">Bar Height</span>
+                    <span class="clearspace-label left">Bar Height</span>
+                    <div class="logo-primary logo-on-white">
+                        <div class="accent"></div>
+                        <div class="text-group">
+                            <span class="primary">FRONTIER</span>
+                            <span class="secondary">SITE OPERATIONS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Minimum Sizes</h3>
+            <div class="min-sizes">
+                <div class="min-size-card">
+                    <h4>Digital (Screen)</h4>
+                    <div class="demo">
+                        <div class="logo-primary logo-on-white size-medium">
+                            <div class="accent"></div>
+                            <div class="text-group">
+                                <span class="primary">FRONTIER</span>
+                                <span class="secondary">SITE OPERATIONS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="size-value">Min width: 120px</p>
+                </div>
+                
+                <div class="min-size-card">
+                    <h4>Print</h4>
+                    <div class="demo">
+                        <div class="logo-primary logo-on-white size-small">
+                            <div class="accent"></div>
+                            <div class="text-group">
+                                <span class="primary">FRONTIER</span>
+                                <span class="secondary">SITE OPERATIONS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="size-value">Min width: 1 inch (25mm)</p>
+                </div>
+                
+                <div class="min-size-card">
+                    <h4>FSO Mark</h4>
+                    <div class="demo">
+                        <div class="logo-monogram mono-on-white size-mono-small">
+                            <div class="accent"></div>
+                            <span class="letters">FSO</span>
+                        </div>
+                    </div>
+                    <p class="size-value">Min width: 0.5 inch (12mm)</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 07: Usage Guidelines -->
+        <section>
+            <div class="section-header">
+                <span class="section-number">07</span>
+                <h2>Usage Guidelines</h2>
+            </div>
+            
+            <div class="usage-grid">
+                <div class="usage-card do">
+                    <h4>Do</h4>
+                    <ul>
+                        <li>Use approved color combinations only</li>
+                        <li>Maintain minimum clear space</li>
+                        <li>Use FSO mark when full logo won't fit</li>
+                        <li>Use monochrome version for single-color applications</li>
+                        <li>Scale proportionally from original files</li>
+                        <li>Place on solid backgrounds when possible</li>
+                    </ul>
+                </div>
+                
+                <div class="usage-card dont">
+                    <h4>Don't</h4>
+                    <ul>
+                        <li>Rotate or skew the logo</li>
+                        <li>Change the typeface or letter spacing</li>
+                        <li>Add drop shadows, gradients, or effects</li>
+                        <li>Place on busy photographic backgrounds</li>
+                        <li>Change the proportions of the accent bar</li>
+                        <li>Use unapproved color combinations</li>
+                        <li>Recreate or redraw — use provided files</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 08: Applications -->
+        <section>
+            <div class="section-header">
+                <span class="section-number">08</span>
+                <h2>Applications</h2>
+            </div>
+            
+            <div class="applications-grid">
+                <div class="app-card">
+                    <div class="app-preview vehicle">
+                        <div class="door-panel">
+                            <div class="logo-small logo-on-orange">
+                                <div class="accent"></div>
+                                <div class="text-group">
+                                    <span class="primary">FRONTIER</span>
+                                    <span class="secondary">SITE OPERATIONS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-info">
+                        <h4>Vehicle Graphics</h4>
+                        <p>Orange cab panels with black bar / white text treatment.</p>
+                    </div>
+                </div>
+                
+                <div class="app-card">
+                    <div class="app-preview hardhat">
+                        <div class="hat">
+                            <div class="logo-tiny mono-on-orange">
+                                <div class="accent"></div>
+                                <span class="letters">FSO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-info">
+                        <h4>Hard Hats & PPE</h4>
+                        <p>FSO compact mark for curved surfaces and small items.</p>
+                    </div>
+                </div>
+                
+                <div class="app-card">
+                    <div class="app-preview businesscard">
+                        <div class="card">
+                            <div class="logo-small logo-on-white" style="transform: scale(0.4); transform-origin: top left;">
+                                <div class="accent"></div>
+                                <div class="text-group">
+                                    <span class="primary">FRONTIER</span>
+                                    <span class="secondary">SITE OPERATIONS</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                www.frontiersiteoperations.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-info">
+                        <h4>Business Cards</h4>
+                        <p>Full logo on white with orange accent bar.</p>
+                    </div>
+                </div>
+                
+                <div class="app-card">
+                    <div class="app-preview invoice">
+                        <div class="doc">
+                            <div class="doc-header">
+                                <div class="logo-small logo-on-white" style="transform: scale(0.35); transform-origin: top left;">
+                                    <div class="accent"></div>
+                                    <div class="text-group">
+                                        <span class="primary">FRONTIER</span>
+                                        <span class="secondary">SITE OPERATIONS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-lines">
+                                <div class="doc-line"></div>
+                                <div class="doc-line"></div>
+                                <div class="doc-line"></div>
+                                <div class="doc-line"></div>
+                                <div class="doc-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-info">
+                        <h4>Documents & Invoices</h4>
+                        <p>Logo at top-left with clear space below.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 09: File Formats -->
+        <section>
+            <div class="section-header">
+                <span class="section-number">09</span>
+                <h2>File Formats</h2>
+            </div>
+            
+            <p style="margin-bottom: 30px;">Request the appropriate file format for your application. Vector formats (SVG, AI, EPS) can scale infinitely without quality loss.</p>
+            
+            <div class="formats-grid">
+                <div class="format-card">
+                    <p class="format-ext">.SVG</p>
+                    <p class="format-name">Vector</p>
+                    <p class="format-use">Web, digital, signage</p>
+                </div>
+                
+                <div class="format-card">
+                    <p class="format-ext">.PNG</p>
+                    <p class="format-name">Raster</p>
+                    <p class="format-use">Digital, presentations</p>
+                </div>
+                
+                <div class="format-card">
+                    <p class="format-ext">.AI/.EPS</p>
+                    <p class="format-name">Vector</p>
+                    <p class="format-use">Print, large format</p>
+                </div>
+                
+                <div class="format-card">
+                    <p class="format-ext">.PDF</p>
+                    <p class="format-name">Vector</p>
+                    <p class="format-use">Print, documents</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <p>Frontier Site Operations — Brand Standards v1.0</p>
+            <div class="footer-logo">
+                <div class="accent"></div>
+                <span class="letters">FSO</span>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>

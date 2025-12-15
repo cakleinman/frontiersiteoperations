@@ -1,23 +1,29 @@
 /* ===================================
    FRONTIER SITE OPERATIONS - STYLES
-   Brand Colors: #C13516 (Allis Chalmers Orange), Charcoal, Grays
+   Brand Colors: #D35F2C (Allis Chalmers Orange), #5A5A5A (Massey Ferguson Gray), #1A1A1A (Low Gloss Black)
    =================================== */
 
 /* CSS Variables */
 :root {
-    --brand-orange: #C13516;
-    --brand-orange-dark: #A12D13;
+    /* FSO Brand Colors */
+    --brand-orange: #D35F2C;
+    --brand-orange-dark: #B84E22;
+    --massey-gray: #5A5A5A;
+    --low-gloss-black: #1A1A1A;
+
+    /* Supporting Colors */
+    --warm-white: #F8F6F3;
+    --off-white: #F2EDE8;
+    --light-gray: #E8E6E3;
+    --mid-gray: #9A9A9A;
     --charcoal: #2D3748;
-    --gray-dark: #4A5568;
-    --gray-medium: #718096;
-    --gray-light: #E2E8F0;
-    --gray-lighter: #F7FAFC;
     --white: #FFFFFF;
-    --black: #1A202C;
-    
-    --font-display: 'Archivo', sans-serif;
-    --font-mono: 'Space Mono', monospace;
-    
+
+    /* Typography */
+    --font-display: 'Barlow Condensed', sans-serif;
+    --font-body: 'Barlow', sans-serif;
+
+    /* Transitions & Shadows */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -37,11 +43,11 @@ html {
 }
 
 body {
-    font-family: var(--font-display);
+    font-family: var(--font-body);
     font-weight: 400;
     line-height: 1.6;
-    color: var(--charcoal);
-    background-color: #FAFAFA;
+    color: var(--low-gloss-black);
+    background-color: var(--warm-white);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -49,10 +55,10 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.2;
-    letter-spacing: -0.02em;
-    color: var(--charcoal);
+    letter-spacing: 0.05em;
+    color: var(--low-gloss-black);
 }
 
 h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 900; }
@@ -62,7 +68,7 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
 p {
     font-size: 1.125rem;
     line-height: 1.7;
-    color: #4A4A4A;
+    color: var(--massey-gray);
 }
 
 /* Container */
@@ -277,7 +283,7 @@ p {
     right: 0;
     width: 60%;
     height: 100%;
-    background: linear-gradient(135deg, var(--gray-lighter) 0%, var(--white) 100%);
+    background: linear-gradient(135deg, var(--off-white) 0%, var(--warm-white) 100%);
     z-index: 0;
 }
 
@@ -313,11 +319,11 @@ p {
     padding: 0.5rem 1rem;
     background: var(--brand-orange);
     color: var(--white);
-    font-family: var(--font-mono);
-    font-weight: 700;
-    font-size: 0.875rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.15em;
     margin-bottom: 2rem;
 }
 
@@ -498,19 +504,23 @@ section {
 }
 
 section:nth-child(even) {
-    background-color: #F5F5F5;
+    background-color: var(--warm-white);
+}
+
+section:nth-child(odd) {
+    background-color: var(--white);
 }
 
 .section-badge {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: var(--gray-lighter);
+    background: var(--light-gray);
     color: var(--brand-orange);
-    font-family: var(--font-mono);
-    font-weight: 700;
-    font-size: 0.875rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.15em;
     margin-bottom: 1rem;
 }
 
@@ -756,8 +766,8 @@ section:nth-child(even) {
 
 /* Footer */
 .footer {
-    background: #1A1A1A;
-    color: var(--gray-light);
+    background: var(--low-gloss-black);
+    color: var(--light-gray);
     padding: 4rem 0 2rem;
 }
 

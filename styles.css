@@ -1548,6 +1548,8 @@ section:nth-child(odd) {
     .footer-logo {
         display: block;
         margin: 0 auto 1rem;
+        width: auto;
+        max-width: 200px;
     }
 
     .footer-col ul {

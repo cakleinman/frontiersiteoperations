@@ -1,13 +1,13 @@
 /* ===================================
    FRONTIER SITE OPERATIONS - STYLES
-   Brand Colors: #D35F2C (Allis Chalmers Orange), #5A5A5A (Massey Ferguson Gray), #1A1A1A (Low Gloss Black)
+   Brand Colors: #C13516 (Allis Chalmers Orange), #5A5A5A (Massey Ferguson Gray), #1A1A1A (Low Gloss Black)
    =================================== */
 
 /* CSS Variables */
 :root {
     /* FSO Brand Colors */
-    --brand-orange: #D35F2C;
-    --brand-orange-dark: #B84E22;
+    --brand-orange: #C13516;
+    --brand-orange-dark: #A12D13;
     --massey-gray: #5A5A5A;
     --low-gloss-black: #1A1A1A;
 
@@ -738,7 +738,7 @@ section:nth-child(odd) {
 
 /* CTA Section */
 .cta-section {
-    background: var(--charcoal);
+    background: var(--low-gloss-black);
     color: var(--white);
     text-align: center;
 }

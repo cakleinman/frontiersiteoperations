@@ -5,6 +5,53 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const navMenu = document.getElementById('navMenu');
     const navbar = document.getElementById('navbar');
+
+    // Hero Video Fade Control
+    const heroVideo = document.getElementById('heroVideo');
+    const heroBg = document.querySelector('.hero-bg');
+    const heroContent = document.querySelector('.hero-content');
+    const heroTitle = document.querySelector('.hero-title');
+    const heroSubtitle = document.querySelector('.hero-subtitle');
+    const heroScroll = document.querySelector('.hero-scroll');
+    const featureItems = document.querySelectorAll('.feature-item');
+
+    if (heroVideo) {
+        // Fade in when video starts playing
+        heroVideo.addEventListener('loadeddata', function() {
+            setTimeout(() => {
+                heroVideo.classList.add('fade-in');
+            }, 300); // Small delay for smooth entrance
+        });
+
+        // Fade out before video ends
+        let videoFadeStarted = false;
+        let backgroundTransitioned = false;
+
+        heroVideo.addEventListener('timeupdate', function() {
+            const timeLeft = heroVideo.duration - heroVideo.currentTime;
+
+            // Start video fade-out and background transition 4 seconds before end
+            if (timeLeft <= 4 && !videoFadeStarted) {
+                videoFadeStarted = true;
+                
+                // Fade out video
+                heroVideo.classList.remove('fade-in');
+                heroVideo.classList.add('fade-out');
+                
+                // Transition background and text to light theme simultaneously
+                // This creates a cross-fade effect from Video -> Light Background
+                if (!backgroundTransitioned) {
+                    backgroundTransitioned = true;
+                    heroBg.classList.add('light');
+                    heroContent.classList.add('light-text');
+                    heroTitle.classList.add('light-text');
+                    heroSubtitle.classList.add('light-text');
+                    heroScroll.classList.add('light-text');
+                    featureItems.forEach(item => item.classList.add('light-text'));
+                }
+            }
+        });
+    }
     
     // Mobile menu toggle
     if (mobileMenuToggle) {

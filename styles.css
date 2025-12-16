@@ -1545,6 +1545,16 @@ section:nth-child(odd) {
     top: 100px;
 }
 
+.service-visual-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 0.5rem;
+    background: white; /* Fallback/Safety */
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
 .detail-card {
     background: var(--white);
     padding: 2rem;

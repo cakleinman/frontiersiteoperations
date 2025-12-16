@@ -1,0 +1,101 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#F8F6F3;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#E8E6E3;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="600" height="400" fill="url(#skyGradient)" rx="12" />
+    
+    <!-- Ground Plane -->
+    <path d="M0 340 L600 340 L600 400 L0 400 Z" fill="#E0DED9" />
+
+    <!-- Light Tower Trailer Body -->
+    <g transform="translate(200, 180)">
+        <!-- Trailer Frame -->
+        <rect x="50" y="160" width="140" height="60" rx="4" fill="#5A5A5A" />
+        <rect x="40" y="200" width="160" height="15" fill="#1A1A1A" />
+        
+        <!-- Generator Housing (Orange Brand Color) -->
+        <path d="M60 160 L60 90 L180 90 L180 160 Z" fill="#C13516" />
+        <path d="M180 90 L180 160 L190 150 L190 100 Z" fill="#A12D13" /> <!-- Side shadow/depth -->
+        
+        <!-- Vents -->
+        <rect x="75" y="110" width="80" height="6" rx="2" fill="#A12D13" opacity="0.6" />
+        <rect x="75" y="125" width="80" height="6" rx="2" fill="#A12D13" opacity="0.6" />
+        <rect x="75" y="140" width="80" height="6" rx="2" fill="#A12D13" opacity="0.6" />
+
+        <!-- Wheel -->
+        <circle cx="120" cy="215" r="28" fill="#1A1A1A" />
+        <circle cx="120" cy="215" r="14" fill="#5A5A5A" />
+        <circle cx="120" cy="215" r="6" fill="#1A1A1A" />
+        
+        <!-- Hitch -->
+        <path d="M190 205 L240 205 L240 195 L200 195 Z" fill="#5A5A5A" />
+        
+        <!-- Stabilizer Legs -->
+        <rect x="20" y="210" width="10" height="25" fill="#5A5A5A" />
+        <rect x="15" y="235" width="20" height="5" fill="#1A1A1A" />
+        
+        <rect x="210" y="210" width="10" height="25" fill="#5A5A5A" />
+        <rect x="205" y="235" width="20" height="5" fill="#1A1A1A" />
+    </g>
+
+    <!-- Mast -->
+    <g transform="translate(200, 180)">
+        <!-- Telescopic Mast Segments -->
+        <rect x="110" y="0" width="20" height="90" fill="#5A5A5A" />
+        <rect x="113" y="-80" width="14" height="80" fill="#757575" />
+        <rect x="116" y="-150" width="8" height="70" fill="#999999" />
+    </g>
+
+    <!-- Light Bar & Lamps -->
+    <g transform="translate(315, 30)">
+        <!-- T-Bar -->
+        <rect x="-60" y="0" width="120" height="8" rx="2" fill="#1A1A1A" />
+        
+        <!-- Lamp 1 -->
+        <g transform="translate(-45, -5) rotate(-15)">
+            <rect x="-15" y="-25" width="30" height="25" rx="4" fill="#5A5A5A" />
+            <rect x="-12" y="-22" width="24" height="20" rx="2" fill="#FFFFFF" />
+            <circle cx="0" cy="-12" r="5" fill="#FFFDC2" opacity="0.8" /> <!-- Bulb/Glow -->
+            <!-- Light Beam -->
+            <path d="M-12 -22 L-60 -120 L60 -120 L12 -22 Z" fill="url(#beamGradient)" opacity="0.0" />
+        </g>
+        
+        <!-- Lamp 2 -->
+        <g transform="translate(-15, -5) rotate(-5)">
+            <rect x="-15" y="-25" width="30" height="25" rx="4" fill="#5A5A5A" />
+            <rect x="-12" y="-22" width="24" height="20" rx="2" fill="#FFFFFF" />
+            <circle cx="0" cy="-12" r="5" fill="#FFFDC2" opacity="0.8" />
+        </g>
+
+        <!-- Lamp 3 -->
+        <g transform="translate(15, -5) rotate(5)">
+            <rect x="-15" y="-25" width="30" height="25" rx="4" fill="#5A5A5A" />
+            <rect x="-12" y="-22" width="24" height="20" rx="2" fill="#FFFFFF" />
+            <circle cx="0" cy="-12" r="5" fill="#FFFDC2" opacity="0.8" />
+        </g>
+
+        <!-- Lamp 4 -->
+        <g transform="translate(45, -5) rotate(15)">
+            <rect x="-15" y="-25" width="30" height="25" rx="4" fill="#5A5A5A" />
+            <rect x="-12" y="-22" width="24" height="20" rx="2" fill="#FFFFFF" />
+            <circle cx="0" cy="-12" r="5" fill="#FFFDC2" opacity="0.8" />
+        </g>
+    </g>
+    
+    <!-- Light Beams (Subtle) -->
+    <defs>
+        <linearGradient id="beamGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" style="stop-color:#FFFDC2;stop-opacity:0.4" />
+            <stop offset="100%" style="stop-color:#FFFDC2;stop-opacity:0" />
+        </linearGradient>
+    </defs>
+    
+    <path d="M280 40 L200 400 L360 400 Z" fill="url(#beamGradient)" opacity="0.3" transform="rotate(-15 280 40)" />
+    <path d="M350 40 L450 400 L600 400 Z" fill="url(#beamGradient)" opacity="0.3" transform="rotate(15 350 40)" />
+
+</svg>

@@ -1350,6 +1350,9 @@ section:nth-child(odd) {
 .feature-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
+    color: var(--brand-orange);
+    display: flex;
+    justify-content: center;
 }
 
 .area-feature h4 {

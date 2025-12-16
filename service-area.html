@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Area | Frontier Site Operations</title>
-    <meta name="description" content="Serving all of Utah County including Provo, Orem, Lehi, Spanish Fork, and surrounding areas.">
+    <meta name="description" content="Contractor logistics serving Utah County. Based in Provo with same-day equipment transport and site services throughout the county.">
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Service Area | Frontier Site Operations">
-    <meta property="og:description" content="Serving Utah County including Provo, Orem, Lehi, Spanish Fork, and surrounding areas.">
+    <meta property="og:description" content="Contractor logistics serving Utah County. Based in Provo with same-day equipment transport throughout the county.">
     <meta property="og:url" content="https://frontiersiteoperations.com/service-area.html">
     <meta property="og:image" content="https://frontiersiteoperations.com/images/MTVFTO.png">
 
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 </head>
 <body>
     <nav class="nav" id="navbar">
@@ -39,68 +41,31 @@
     <section class="page-header">
         <div class="container">
             <span class="section-badge">Where We Serve</span>
-            <h1>Proudly Serving Utah County</h1>
-            <p>Fast, local service throughout Utah County and surrounding areas. We're close enough to respond quickly, experienced enough to handle your needs.</p>
+            <h1>Serving Utah County</h1>
+            <p>Local contractor logistics based in Provo. Fast response across the entire county.</p>
         </div>
     </section>
 
     <section class="service-area-content">
         <div class="container">
             <div class="area-intro">
-                <h2>Complete Coverage Across Utah County</h2>
-                <p>As a locally-based operation, we understand the unique needs of Utah County contractors. From mountain job sites to valley developments, we know the area and can navigate efficiently to keep your projects on schedule.</p>
+                <h2>Your Local Logistics Partner</h2>
+                <p>Based in Provo, we serve contractors throughout Utah County. Mountain job sites, valley developments, tight urban spaces—we'll get your equipment where it needs to be.</p>
             </div>
 
-            <div class="cities-grid">
-                <h3>Primary Service Cities</h3>
-                <div class="cities-list">
-                    <div class="city-card">
-                        <h4>Provo</h4>
-                        <p>City center and surrounding developments</p>
+            <div class="service-map-section">
+                <h3>Our Coverage Area</h3>
+                <div class="map-container">
+                    <div id="service-area-map" aria-label="Interactive map of Utah County service area"></div>
+                </div>
+                <div class="map-legend">
+                    <div class="legend-item">
+                        <span class="legend-marker legend-marker--hq"></span>
+                        <span>Headquarters (Provo)</span>
                     </div>
-                    <div class="city-card">
-                        <h4>Orem</h4>
-                        <p>Residential and commercial projects</p>
-                    </div>
-                    <div class="city-card">
-                        <h4>Lehi</h4>
-                        <p>Rapid growth area, new construction</p>
-                    </div>
-                    <div class="city-card">
-                        <h4>Spanish Fork</h4>
-                        <p>Southern Utah County coverage</p>
-                    </div>
-                    <div class="city-card">
-                        <h4>American Fork</h4>
-                        <p>Northern corridor access</p>
-                    </div>
-                    <div class="city-card">
-                        <h4>Pleasant Grove</h4>
-                        <p>Residential developments</p>
-                    </div>
-                    <div class="city-card">
-                        <h4>Springville</h4>
-                        <p>Growing residential areas</p>
-                    </div>
-                    <div class="city-card">
-                        <h4>Payson</h4>
-                        <p>South county projects</p>
-                    </div>
-                    <div class="city-card">
-                        <h4>Mapleton</h4>
-                        <p>Mountain developments</p>
-                    </div>
-                    <div class="city-card">
-                        <h4>Eagle Mountain</h4>
-                        <p>West side expansion areas</p>
-                    </div>
-                    <div class="city-card">
-                        <h4>Saratoga Springs</h4>
-                        <p>Growing lake community</p>
-                    </div>
-                    <div class="city-card">
-                        <h4>Santaquin</h4>
-                        <p>Southern boundary coverage</p>
+                    <div class="legend-item">
+                        <span class="legend-marker legend-marker--coverage"></span>
+                        <span>Service Area</span>
                     </div>
                 </div>
             </div>
@@ -110,58 +75,58 @@
                 <div class="feature-grid">
                     <div class="area-feature">
                         <div class="feature-icon">⚡</div>
-                        <h4>Faster Response Times</h4>
-                        <p>Being based in Utah County means we can respond to same-day requests quickly. No waiting for trucks to come from Salt Lake or out of state.</p>
+                        <h4>Same-Day Response</h4>
+                        <p>Based in Utah County, we can respond to urgent requests the same day. No waiting for trucks from out of state.</p>
                     </div>
                     <div class="area-feature">
                         <div class="feature-icon">🗺️</div>
-                        <h4>Know the Territory</h4>
-                        <p>We know the roads, the traffic patterns, and how to navigate efficiently between rental yards and job sites across the county.</p>
+                        <h4>Local Knowledge</h4>
+                        <p>From rental yards to job sites, we know Utah County. We understand local traffic patterns and the fastest routes.</p>
                     </div>
                     <div class="area-feature">
                         <div class="feature-icon">🤝</div>
-                        <h4>Community Focused</h4>
-                        <p>We're part of the local contractor community. Your success helps our community grow.</p>
+                        <h4>Contractor Focused</h4>
+                        <p>We're here to support Utah's contractors. Your project stays on schedule when logistics aren't a headache.</p>
                     </div>
                     <div class="area-feature">
                         <div class="feature-icon">📍</div>
                         <h4>Mountain to Valley</h4>
-                        <p>Whether your site is in the canyon or on the valley floor, we handle the logistics to get equipment where it needs to be.</p>
+                        <p>Canyon sites, valley developments, foothill projects—we handle the terrain so you can focus on the work.</p>
                     </div>
                 </div>
             </div>
 
             <div class="coverage-details">
-                <h3>Service Details by Area Type</h3>
+                <h3>We Handle All Site Types</h3>
                 <div class="coverage-cards">
                     <div class="coverage-card">
                         <h4>Urban/City Centers</h4>
-                        <p>Provo, Orem, Lehi city centers</p>
+                        <p>Provo, Orem, Lehi, American Fork</p>
                         <ul>
-                            <li>Tight access point navigation</li>
-                            <li>Scheduled deliveries to minimize disruption</li>
-                            <li>Coordination with city requirements</li>
-                            <li>Multiple daily trips available</li>
+                            <li>Tight access navigation</li>
+                            <li>Scheduled deliveries</li>
+                            <li>City coordination</li>
+                            <li>Multiple trips available</li>
                         </ul>
                     </div>
                     <div class="coverage-card">
                         <h4>Suburban Developments</h4>
-                        <p>Residential neighborhoods and new subdivisions</p>
+                        <p>New subdivisions and residential areas</p>
                         <ul>
-                            <li>HOA-aware delivery scheduling</li>
+                            <li>HOA-aware scheduling</li>
                             <li>Careful site access</li>
-                            <li>Respectful of residential areas</li>
-                            <li>Flexible timing options</li>
+                            <li>Flexible timing</li>
+                            <li>Respectful delivery</li>
                         </ul>
                     </div>
                     <div class="coverage-card">
                         <h4>Mountain/Canyon Sites</h4>
-                        <p>Foothill and canyon developments</p>
+                        <p>Foothill and canyon projects</p>
                         <ul>
-                            <li>Experience with grade challenges</li>
+                            <li>Grade-capable equipment</li>
                             <li>Weather-aware scheduling</li>
-                            <li>Proper equipment for terrain</li>
-                            <li>Safety-focused approach</li>
+                            <li>Proper gear for terrain</li>
+                            <li>Safety-first approach</li>
                         </ul>
                     </div>
                     <div class="coverage-card">
@@ -170,8 +135,8 @@
                         <ul>
                             <li>Large equipment handling</li>
                             <li>Loading dock coordination</li>
-                            <li>After-hours delivery available</li>
-                            <li>Multiple site coordination</li>
+                            <li>After-hours available</li>
+                            <li>Multi-site logistics</li>
                         </ul>
                     </div>
                 </div>
@@ -182,11 +147,11 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Not Sure If We Cover Your Area?</h2>
-                <p>Give us a call. If we can't serve you directly, we'll do our best to point you in the right direction.</p>
+                <h2>Got a Job Outside Utah County?</h2>
+                <p>We're open to it. If the job makes sense, we're happy to talk—reach out and let's see if we can help.</p>
                 <div class="cta-buttons">
                     <a href="tel:+18054347063" class="btn-primary btn-large">(805) 434-7063</a>
-                    <a href="contact.html" class="btn-secondary btn-large">Send a Message</a>
+                    <a href="contact.html" class="btn-secondary btn-large">Request a Quote</a>
                 </div>
             </div>
         </div>
@@ -231,5 +196,92 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Utah County center coordinates
+        const utahCountyCenter = [40.15, -111.65];
+
+        // Initialize map
+        const map = L.map('service-area-map', {
+            center: utahCountyCenter,
+            zoom: 9,
+            scrollWheelZoom: false,
+            zoomControl: true
+        });
+
+        // Custom styled tile layer (CartoDB Positron - clean, professional look)
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 19
+        }).addTo(map);
+
+        // Brand colors
+        const brandOrange = '#C13516';
+        const brandOrangeDark = '#A12D13';
+
+        // Load Utah County boundary
+        fetch('data/utah-county-simplified.geojson')
+            .then(response => response.json())
+            .then(data => {
+                L.geoJSON(data, {
+                    style: {
+                        color: brandOrange,
+                        weight: 3,
+                        opacity: 1,
+                        fillColor: brandOrange,
+                        fillOpacity: 0.08
+                    }
+                }).addTo(map);
+            })
+            .catch(err => console.warn('Could not load county boundary:', err));
+
+        // Headquarters marker (Provo)
+        const hqCoords = [40.2338, -111.6585];
+
+        // FSO branded marker icon
+        const hqIcon = L.divIcon({
+            className: 'hq-marker',
+            html: `<div style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 44px;
+                height: 44px;
+                background: ${brandOrange};
+                border: 3px solid white;
+                border-radius: 6px;
+                box-shadow: 0 3px 12px rgba(0,0,0,0.35);
+                font-family: 'Barlow Condensed', sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                color: white;
+                letter-spacing: 0.5px;
+            ">FSO</div>`,
+            iconSize: [50, 50],
+            iconAnchor: [25, 25]
+        });
+
+        const hqMarker = L.marker(hqCoords, { icon: hqIcon }).addTo(map);
+
+        hqMarker.bindTooltip(`
+            <strong style="font-family: 'Barlow Condensed', sans-serif; font-size: 14px; color: #1A1A1A;">Provo</strong>
+            <br><span style="font-size: 12px; color: #5A5A5A;">Headquarters</span>
+        `, {
+            permanent: false,
+            direction: 'top',
+            offset: [0, -20],
+            className: 'city-tooltip'
+        });
+
+        // Fit bounds to Utah County (with padding)
+        map.fitBounds([
+            [39.78, -112.22],  // Southwest
+            [40.58, -111.08]   // Northeast
+        ], { padding: [20, 20] });
+    });
+    </script>
 </body>
 </html>

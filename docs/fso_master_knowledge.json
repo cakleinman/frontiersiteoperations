@@ -46,10 +46,9 @@
     },
     "service_area": {
       "primary": "Utah County",
-      "secondary": "Salt Lake County",
-      "core_corridor": "I-15 from Provo to Sandy",
-      "flexibility": "Willing to take good jobs outside primary area",
-      "notes": "Owner lives in Provo, works in Sandy - I-15 corridor is easy to service"
+      "secondary": null,
+      "flexibility": "Willing to consider jobs outside Utah County on a case-by-case basis",
+      "notes": "Focus on Utah County for now. Owner lives in Provo. Jobs outside Utah County require inquiry."
     }
   },
 

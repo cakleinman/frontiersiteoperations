@@ -16,12 +16,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const featureItems = document.querySelectorAll('.feature-item');
 
     if (heroVideo) {
-        // Fade in when video starts playing
-        heroVideo.addEventListener('loadeddata', function() {
+        // Function to handle video start
+        const handleVideoStart = () => {
             setTimeout(() => {
                 heroVideo.classList.add('fade-in');
-            }, 300); // Small delay for smooth entrance
-        });
+            }, 300);
+        };
+
+        // If video is already ready (cached), show it immediately
+        if (heroVideo.readyState >= 3) {
+            handleVideoStart();
+        } else {
+            // Otherwise wait for it to load
+            heroVideo.addEventListener('loadeddata', handleVideoStart);
+        }
 
         // Fade out before video ends
         let videoFadeStarted = false;

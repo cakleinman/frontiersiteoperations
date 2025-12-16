@@ -4,6 +4,10 @@
             <stop offset="0%" style="stop-color:#F8F6F3;stop-opacity:1" />
             <stop offset="100%" style="stop-color:#E8E6E3;stop-opacity:1" />
         </linearGradient>
+        <linearGradient id="beamGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" style="stop-color:#FFFDC2;stop-opacity:0.4" />
+            <stop offset="100%" style="stop-color:#FFFDC2;stop-opacity:0" />
+        </linearGradient>
     </defs>
     
     <!-- Background -->
@@ -61,8 +65,6 @@
             <rect x="-15" y="-25" width="30" height="25" rx="4" fill="#5A5A5A" />
             <rect x="-12" y="-22" width="24" height="20" rx="2" fill="#FFFFFF" />
             <circle cx="0" cy="-12" r="5" fill="#FFFDC2" opacity="0.8" /> <!-- Bulb/Glow -->
-            <!-- Light Beam -->
-            <path d="M-12 -22 L-60 -120 L60 -120 L12 -22 Z" fill="url(#beamGradient)" opacity="0.0" />
         </g>
         
         <!-- Lamp 2 -->
@@ -87,14 +89,7 @@
         </g>
     </g>
     
-    <!-- Light Beams (Subtle) -->
-    <defs>
-        <linearGradient id="beamGradient" x1="0%" y1="100%" x2="0%" y2="0%">
-            <stop offset="0%" style="stop-color:#FFFDC2;stop-opacity:0.4" />
-            <stop offset="100%" style="stop-color:#FFFDC2;stop-opacity:0" />
-        </linearGradient>
-    </defs>
-    
+    <!-- Light Beams (Separate Layer) -->
     <path d="M280 40 L200 400 L360 400 Z" fill="url(#beamGradient)" opacity="0.3" transform="rotate(-15 280 40)" />
     <path d="M350 40 L450 400 L600 400 Z" fill="url(#beamGradient)" opacity="0.3" transform="rotate(15 350 40)" />
 

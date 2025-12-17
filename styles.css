@@ -307,6 +307,7 @@ p {
     align-items: center;
     padding-top: 80px;
     overflow: hidden;
+    background-color: var(--low-gloss-black);
 }
 
 .hero-bg {
@@ -322,7 +323,7 @@ p {
 }
 
 .hero-bg.light {
-    background: var(--low-gloss-black);
+    background: #000000 !important;
 }
 
 .hero-video {

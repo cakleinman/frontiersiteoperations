@@ -1121,7 +1121,7 @@ section:nth-child(odd) {
 .form-group select,
 .form-group textarea {
     padding: 1rem;
-    border: 2px solid var(--gray-light);
+    border: 2px solid var(--mid-gray);
     border-radius: 4px;
     font-family: var(--font-display);
     font-size: 1rem;
@@ -1139,6 +1139,13 @@ section:nth-child(odd) {
 .form-group textarea {
     resize: vertical;
     min-height: 150px;
+}
+
+.form-group input::placeholder,
+.form-group select::placeholder,
+.form-group textarea::placeholder {
+    color: var(--massey-gray);
+    opacity: 1;
 }
 
 @media (max-width: 968px) {
@@ -1954,7 +1961,7 @@ section:nth-child(odd) {
 }
 
 .waitlist-input-group input[type="email"]::placeholder {
-    color: var(--mid-gray);
+    color: var(--massey-gray);
 }
 
 .btn-waitlist {
@@ -1965,7 +1972,7 @@ section:nth-child(odd) {
 
 .waitlist-note {
     font-size: 0.8rem !important;
-    color: var(--mid-gray) !important;
+    color: var(--light-gray) !important;
     margin-bottom: 0 !important;
 }
 

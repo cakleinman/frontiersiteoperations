@@ -1824,3 +1824,70 @@ section:nth-child(odd) {
         font-size: 1rem;
     }
 }
+
+/* ===================================
+   FAQ PAGE STYLES
+   =================================== */
+
+.faq-content {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.faq-item:first-child {
+    padding-top: 0;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item h2 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    margin-bottom: 0.75rem;
+    color: var(--low-gloss-black);
+}
+
+.faq-item p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--massey-gray);
+}
+
+.faq-item a {
+    color: var(--brand-orange);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .faq-content {
+        padding: 2.5rem 0;
+    }
+
+    .faq-item {
+        padding: 1.5rem 0;
+    }
+
+    .faq-item h2 {
+        font-size: 1.15rem;
+    }
+
+    .faq-item p {
+        font-size: 1rem;
+    }
+}

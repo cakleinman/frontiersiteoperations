@@ -1903,8 +1903,9 @@ section:nth-child(odd) {
    WAITLIST FORM STYLES
    =================================== */
 
-.waitlist-card {
-    background: var(--low-gloss-black);
+.waitlist-card,
+.detail-card.waitlist-card {
+    background: var(--low-gloss-black) !important;
     border: 1px solid var(--massey-gray);
     padding: 2rem;
 }

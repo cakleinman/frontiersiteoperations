@@ -328,10 +328,10 @@ p {
 
 .hero-video {
     position: absolute;
-    top: -5%;
+    top: -1.5%;
     left: 0;
     width: 100%;
-    height: 115%;
+    height: 105%;
     object-fit: cover;
     opacity: 0;
     transition: opacity 3s cubic-bezier(0.4, 0.0, 0.2, 1);

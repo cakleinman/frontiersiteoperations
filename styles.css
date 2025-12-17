@@ -1998,7 +1998,7 @@ section:nth-child(odd) {
 
 .launch-waitlist {
     padding: 5rem 0;
-    background: var(--low-gloss-black);
+    background: var(--low-gloss-black) !important;
 }
 
 .launch-waitlist-content {

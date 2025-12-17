@@ -141,10 +141,20 @@
             <div class="service-detail-grid reverse">
                 <div class="service-detail-visual">
                     <img src="images/light-tower.svg?v=3" alt="Mobile Light Tower" class="service-visual-img">
-                    <div class="detail-card featured">
-                        <span class="coming-soon-badge">Coming Q1 2025</span>
-                        <h4>Get Notified</h4>
-                        <p>We're finalizing equipment and scheduling. Contact us to join our priority list for early access.</p>
+
+                    <!-- Waitlist Signup Card -->
+                    <div class="detail-card waitlist-card">
+                        <span class="launch-badge">Launching Q1 2025</span>
+                        <h4>Get Early Access</h4>
+                        <p>Join the waitlist for priority scheduling and launch pricing on site power services.</p>
+                        <form name="site-services-waitlist" method="POST" data-netlify="true" class="waitlist-form">
+                            <input type="hidden" name="form-name" value="site-services-waitlist">
+                            <div class="waitlist-input-group">
+                                <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
+                                <button type="submit" class="btn-primary btn-waitlist">Join Waitlist</button>
+                            </div>
+                        </form>
+                        <p class="waitlist-note">We'll notify you when site services go live. No spam.</p>
                     </div>
                 </div>
 
@@ -170,11 +180,15 @@
                         <li>Emergency power backup</li>
                     </ul>
 
-                    <p>If you have an upcoming project that needs site power support, <a href="contact.html">contact us</a> to discuss your requirements and get on our priority list.</p>
+                    <h3>Waitlist Benefits</h3>
+                    <ul class="detail-list">
+                        <li>Priority scheduling when we launch</li>
+                        <li>Early-bird pricing for first customers</li>
+                        <li>Direct line to discuss your project needs</li>
+                    </ul>
 
                     <div class="service-cta">
-                        <a href="contact.html" class="btn-primary">Join Priority List</a>
-                        <a href="tel:+18054347063" class="btn-secondary">Call to Discuss</a>
+                        <a href="tel:+18054347063" class="btn-secondary">Call to Discuss Your Project</a>
                     </div>
                 </div>
             </div>

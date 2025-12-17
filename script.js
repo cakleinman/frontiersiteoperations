@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     heroTitle.classList.add('light-text');
                     heroSubtitle.classList.add('light-text');
                     heroScroll.classList.add('light-text');
+                    heroScroll.classList.add('visible');
                     featureItems.forEach(item => item.classList.add('light-text'));
                 }
             }
@@ -93,17 +94,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Navbar scroll effect
-    let lastScroll = 0;
     window.addEventListener('scroll', function() {
         const currentScroll = window.pageYOffset;
-        
+
         if (currentScroll > 100) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
-        
-        lastScroll = currentScroll;
     });
     
     // Smooth scroll for anchor links

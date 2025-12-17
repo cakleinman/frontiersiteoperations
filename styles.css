@@ -322,7 +322,7 @@ p {
 }
 
 .hero-bg.light {
-    background: linear-gradient(135deg, var(--off-white) 0%, var(--warm-white) 100%);
+    background: var(--low-gloss-black);
 }
 
 .hero-video {
@@ -380,7 +380,7 @@ p {
 }
 
 .hero-content.light-text {
-    color: var(--charcoal);
+    color: var(--white);
 }
 
 .hero-badge {
@@ -403,7 +403,7 @@ p {
 }
 
 .hero-title.light-text {
-    color: var(--charcoal);
+    color: var(--white);
 }
 
 .hero-title .highlight {
@@ -423,7 +423,7 @@ p {
 }
 
 .hero-subtitle.light-text {
-    color: var(--gray-dark);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .hero-cta {
@@ -451,7 +451,7 @@ p {
 }
 
 .feature-item.light-text {
-    color: var(--charcoal);
+    color: var(--white);
 }
 
 .feature-item svg {
@@ -534,7 +534,7 @@ p {
 }
 
 .hero-scroll.light-text {
-    color: var(--gray-medium);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 @keyframes fadeInUp {

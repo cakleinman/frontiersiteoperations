@@ -1,14 +1,30 @@
 {
   "_metadata": {
-    "version": "1.1.0",
+    "version": "1.2.0",
     "created": "2025-12-09",
-    "last_updated": "2025-12-10",
+    "last_updated": "2025-12-17",
     "purpose": "Single source of truth for all FSO AI agents",
     "usage": "All agents MUST reference this file before generating content. Never fabricate information not contained here.",
     "changelog": [
       {"version": "1.0.0", "date": "2025-12-09", "changes": "Initial creation"},
-      {"version": "1.1.0", "date": "2025-12-10", "changes": "Added brand color system (three-paint fleet colors, usage rules)"}
+      {"version": "1.1.0", "date": "2025-12-10", "changes": "Added brand color system (three-paint fleet colors, usage rules)"},
+      {"version": "1.2.0", "date": "2025-12-17", "changes": "Updated launch timeline: Business Q1 2026, Site Services Q2 2026. Added launch_timeline section."}
     ]
+  },
+
+  "launch_timeline": {
+    "business_launch": {
+      "target": "Q1 2026",
+      "services_at_launch": ["Equipment Transport", "Materials Delivery", "Waste & Container Services"],
+      "notes": "Core hauling and logistics services available at launch"
+    },
+    "site_services_launch": {
+      "target": "Q2 2026",
+      "services": ["Light tower delivery, setup, and removal", "Generator delivery", "Fuel service and monitoring"],
+      "notes": "Site power and lighting services launching after core business is operational"
+    },
+    "current_status": "pre_launch",
+    "website_purpose": "Build waitlist and early interest while preparing for launch"
   },
 
   "company": {

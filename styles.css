@@ -207,14 +207,22 @@ p {
 
 .btn-nav {
     padding: 0.75rem 1.5rem;
-    background: var(--gray-lighter);
-    border-radius: 4px;
+    background: var(--brand-orange);
+    color: var(--white) !important;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: var(--transition);
 }
 
 .btn-nav:hover {
-    background: var(--gray-light);
+    background: var(--brand-orange-dark);
 }
 
+.btn-nav::after {
+    display: none !important;
+}
+
+/* Hide duplicate CTA on desktop - the in-menu Join Waitlist button is sufficient */
 .btn-nav-cta {
     display: none;
 }
@@ -322,7 +330,7 @@ p {
 }
 
 .hero-bg.light {
-    background: #000000 !important;
+    background: var(--warm-white) !important;
 }
 
 .hero-video {
@@ -381,7 +389,7 @@ p {
 }
 
 .hero-content.light-text {
-    color: var(--white);
+    color: var(--charcoal);
 }
 
 .hero-badge {
@@ -404,7 +412,7 @@ p {
 }
 
 .hero-title.light-text {
-    color: var(--white);
+    color: var(--charcoal);
 }
 
 .hero-title .highlight {
@@ -424,7 +432,7 @@ p {
 }
 
 .hero-subtitle.light-text {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--massey-gray);
 }
 
 .hero-cta {
@@ -452,7 +460,7 @@ p {
 }
 
 .feature-item.light-text {
-    color: var(--white);
+    color: var(--charcoal);
 }
 
 .feature-item svg {
@@ -540,7 +548,7 @@ p {
 }
 
 .hero-scroll.light-text {
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--massey-gray);
 }
 
 @keyframes fadeInUp {

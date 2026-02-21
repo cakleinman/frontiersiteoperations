@@ -57,3 +57,29 @@ From the knowledge base, the official paint-anchored brand colors are:
 The site is designed for GitHub Pages or Netlify:
 - Push to `main` triggers auto-deploy
 - `CNAME` file contains the custom domain configuration
+
+## Changelog
+
+**After every push or deploy, append an entry below.** Use the format shown. Keep entries reverse-chronological (newest first).
+
+### Format
+
+```
+### YYYY-MM-DD — Short summary
+**Commit:** `<short hash>` | **Deployed:** Yes/No
+- Bullet describing what changed and why
+- Another bullet if needed
+```
+
+### Log
+
+### 2026-02-21 — WCAG accessibility fixes
+**Commit:** `1dc9a48` | **Deployed:** Yes
+- Added skip-to-content link and `<main>` landmark to all 8 pages
+- Fixed footer heading hierarchy (h4 to h3) across all pages
+- Added aria-labels to homepage "Learn More" service links
+- Added `.skip-link` CSS to styles.css
+
+### 2026-02-21 — Pre-launch updates
+**Commit:** `17d9f3d` | **Deployed:** Yes
+- Waitlist CTAs, phone number removal, thank-you page added

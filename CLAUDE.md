@@ -73,6 +73,10 @@ The site is designed for GitHub Pages or Netlify:
 
 ### Log
 
+### 2026-02-21 — Add changelog framework to CLAUDE.md
+**Commit:** `fb24f45` | **Deployed:** Yes
+- Added changelog section with format template and reverse-chronological log
+
 ### 2026-02-21 — WCAG accessibility fixes
 **Commit:** `1dc9a48` | **Deployed:** Yes
 - Added skip-to-content link and `<main>` landmark to all 8 pages

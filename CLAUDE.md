@@ -73,6 +73,13 @@ The site is designed for GitHub Pages or Netlify:
 
 ### Log
 
+### 2026-02-21 — Link Netlify CLI and deploy
+**Commit:** `706a2e0` | **Deployed:** Yes
+- Linked project to Netlify site (frontiersiteoperations)
+- Added `.netlify` to `.gitignore`
+- Fixed npm cache permissions and stale npx cache
+- Deployed to production: https://frontiersiteoperations.com
+
 ### 2026-02-21 — Add changelog framework to CLAUDE.md
 **Commit:** `fb24f45` | **Deployed:** Yes
 - Added changelog section with format template and reverse-chronological log
